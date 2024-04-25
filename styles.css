@@ -1,0 +1,466 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* Hide horizontal scrollbar */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.logo {
+    font-family: 'Sublima Extra Bold', sans-serif;
+    /* Use the Sublima Extra Bold font */
+    font-size: 40px;
+    /* Adjust the font size as needed */
+    font-weight: bold;
+    /* Make the text bold */
+    color: #111275;
+    margin-right: 60px;
+    /* Set the color of the logo text */
+}
+
+.header {
+    background-color: #ffffff;
+    color: #111275;
+    padding: 20px;
+    display: flex;
+    /* Add this line to evenly space items */
+}
+
+.header-buttons {
+    display: flex;
+}
+
+.button {
+    background-color: #ffffff;
+    color: #4f5960;
+    /* Change the default color to dusty */
+    font-family: 'Alesand Extra Bold', sans-serif;
+    border: none;
+    font-size: 13px;
+    font-weight: bold;
+    /* Make the text bold */
+    padding: 10px 5px;
+    margin-right: 2px;
+    cursor: pointer;
+    transition: color 0.3s;
+    /* Add transition for smooth color change */
+}
+
+.button:hover {
+    color: #111275;
+    /* Change to your desired hover color */
+}
+
+.first-section-content {
+    display: flex;
+    margin-left: 20px;
+    flex: 1;
+}
+
+.first-section-content .left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+    /* Adjust as needed */
+}
+
+
+
+.first-name,
+.last-name {
+    margin: 0;
+}
+
+.first-name {
+    color: #999999;
+    font-family: 'Kinetika Regular', sans-serif;
+    font-size: 60px;
+    font-weight: lighter;
+}
+
+.last-name {
+    font-family: 'Helvetica';
+    /* Arial, Helvetica, Georgia, Sans-serif;*/
+    color: #111275;
+    /*font-family: 'Organetto Ultra Bold', sans-serif;*/
+    font-weight: 800;
+    font-size: 80px;
+    margin-left: 120px;
+}
+
+.vertical-bar {
+    color: #111275;
+    border-left: 8px solid #111275;
+    flex: 1;
+    width: 50px;
+}
+
+.bar-and-paragraph {
+    display: flex;
+    /* New flex container */
+    flex-direction: row;
+}
+
+.paragraph {
+    color: #8c8c97;
+    font-family: 'Noyh R Light', sans-serif;
+    font-size: 14px;
+    margin-left: 20px;
+    margin-top: 10px;
+    /* Adjust as needed */
+}
+
+.first-section-content .right {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+
+.horizontal-bar {
+    width: 100%;
+    border-top: 2px solid black;
+    margin-top: 20px;
+}
+
+
+/*second section*/
+
+.second-section-wrapper {
+    background-color: white;
+    /* Set background color to white */
+    padding: 20px;
+    /* Add padding for spacing */
+}
+
+.second-section-content {
+    display: flex;
+    margin-top: 20px;
+    /* Adjust as needed */
+    background-color: black;
+    /* Set background color to black */
+    color: white;
+    /* Set text color to white for better contrast */
+}
+
+
+
+.second-section-content .left {
+    margin-top: 5%;
+    flex: 0 0 30%;
+    /* Set width to 30% */
+    padding: 15px;
+    display: flex;
+
+    /* Center the image vertically */
+    justify-content: center;
+
+    /* Adjust margin */
+    /* Center the image horizontally */
+}
+
+.second-section-content .left img {
+    max-width: 100%;
+    /* Limit image width to 100% of its container */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+.second-section-content .right {
+    margin-top: 5%;
+    margin-left: 10px;
+    flex: 0 0 70%;
+    /* Set width to 70% */
+
+    /* Adjust margin */
+    /* Added margin-left to position content from 30% */
+}
+
+.second-section-content .right h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 5.25vw;
+    font-weight: 800;
+    color: #fff;
+    text-align: center;
+}
+
+.second-section-content p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    margin-left: 5%;
+    /* Added this */
+    margin-right: 10%;
+    /* Added this */
+    margin-top: 0;
+    /* Added this */
+
+}
+
+.second-section-content .right h4 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    /* Added this */
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.second-section-content .additional-info {
+    margin-left: 5%;
+}
+
+.second-section-content .right .sub-headings,
+h3 {
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    margin-right: 0px;
+}
+
+.second-section-content .right .sub-headings .fir {
+    font-family: "Montserrat", sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    color: #fff;
+    white-space: nowrap;
+}
+
+.second-section-content .right .sub-headings .sec {
+    margin-left: 10%;
+    margin-right: 7%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 19px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.second-section-content .right .horizontal-bar {
+    width: 90%;
+    border-top: 1px solid rgb(222, 217, 217);
+    margin-top: 20px;
+    margin-bottom: 5%;
+    margin-left: auto;
+    /* Added this */
+    margin-right: auto;
+    /* Added this */
+
+}
+
+.second-section-content .right .extra {
+    margin-right: 15%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 19px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 0;
+    /* Added this */
+}
+
+/*third section*/
+
+.third-section-content {
+    position: relative;
+    margin-bottom: 20px;
+
+    /* Relative positioning to contain absolutely positioned elements */
+}
+
+.third-section-content .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('back.png');
+    background-size: cover;
+    /* Set background image and cover the entire section */
+}
+
+.third-section-content .content {
+    position: relative;
+    z-index: 1;
+    width: 60%;
+    margin-left: auto;
+    /* Push to the right */
+}
+
+.third-section-content .text-content {
+    position: relative;
+    padding-top: 40px;
+    /* Adjust as needed */
+}
+
+.third-section-content h1 {
+    font-family: Montserrat, sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    color: rgb(18, 18, 117);
+}
+
+.header-row-1 p {
+    position: relative;
+    top: 15px;
+    margin-left: 14%;
+    font-family: Montserrat, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(28, 28, 31);
+    margin-right: 10px;
+
+}
+
+.header-row-2 button {
+    margin-left: 20px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 11.2px;
+    font-weight: 700;
+    color: rgb(18, 18, 117);
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+
+}
+
+.header-row-2 button:hover {
+    background-color: rgb(18, 18, 117);
+    border: 1px solid rgb(18, 18, 117);
+    /* Change to desired button color */
+    color: #fff;
+    /* Change to desired text color */
+}
+
+.text-content {
+    margin-right: 5px;
+    /* Adjusts margins */
+}
+
+.header-row-1 {
+    display: flex;
+    align-items: end;
+    gap: 10px;
+    margin: 0;
+    /* Removes all margins */
+}
+
+.header-row-2 {
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    /* Removes all margins */
+}
+
+.third-section-content .logos {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 5%;
+}
+
+.third-section-content .logos img {
+    width: 70px;
+}
+
+.third-section-content .video-description {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: #181414;
+    margin: 10px;
+    margin-left: auto;
+    margin-bottom: 5%;
+}
+
+.third-section-content .vid {
+    width: 65%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.third-section-content .description {
+    width: 35%;
+    padding: 20px;
+    color: #fff;
+}
+
+.third-section-content .description h2 {
+    margin-bottom: 10%;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 31.2064px;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+}
+
+
+.third-section-content .description p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12.3px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    width: 90%;
+    margin-left: auto;
+    text-align: left;
+    line-height: 2.0;
+
+}
+
+.fourth-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* Assuming you want the container to take the full height of the viewport */
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    margin-bottom: 30px;
+    /* Center vertically */
+}
+
+.behind {
+    position: absolute;
+    margin: 0;
+    border: 1px red solid;
+    height: auto;
+    /* Maintain the image's aspect ratio */
+    max-height: 85%;
+    width: 100%;
+    z-index: 0;
+    /* Limit the height of the image */
+}
+
+.center {
+    position: relative;
+    width: 70%;
+    height: 100%;
+    z-index: 1;
+    /* Add this line */
+}
+
+
+/*fifth Section*/
+
+
