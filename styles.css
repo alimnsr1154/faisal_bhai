@@ -279,7 +279,6 @@ h3 {
 .third-section-content {
     position: relative;
     margin-bottom: 20px;
-
     /* Relative positioning to contain absolutely positioned elements */
 }
 
@@ -289,7 +288,7 @@ h3 {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('assets/back.png');
+    background-image: url('assets/test\ for\ picture\ -v1.png');
     background-size: cover;
     /* Set background image and cover the entire section */
 }
@@ -469,6 +468,16 @@ h3 {
 .fifth-section {
     margin-bottom: 50px;
     position: relative;
+}
+
+.card-video-top {
+    width: 100%;
+    /* Adjust as needed */
+    max-width: 500px;
+    /* Adjust as needed */
+    height: auto;
+    object-fit: contain;
+    /* Add this line */
 }
 
 .carousel-container {
