@@ -375,11 +375,10 @@ h3 {
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
-    margin-bottom: 5%;
 }
 
 .third-section-content .logos img {
-    width: 70px;
+    width: 90px ;
 }
 
 .third-section-content .video-description {
@@ -388,7 +387,7 @@ h3 {
     width: 100%;
     height: auto;
     background-color: #181414;
-    margin: 10px;
+    margin: 5px;
     margin-left: auto;
     margin-bottom: 5%;
 }
@@ -609,6 +608,11 @@ h3 {
     height: 250px;
     position: relative;
     /* Adjust as needed */
+}
+
+.social-cards .card:hover {
+    transform: translateY(-10px);
+    /* Add this line */
 }
 
 .social-cards .card::after {
