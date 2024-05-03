@@ -3,25 +3,6 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    /* Hide horizontal scrollbar */
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-}
-
-.logo {
-    font-family: 'Sublima Extra Bold', sans-serif;
-    /* Use the Sublima Extra Bold font */
-    font-size: 40px;
-    /* Adjust the font size as needed */
-    font-weight: bold;
-    /* Make the text bold */
-    color: #111275;
-    margin-right: 60px;
-    /* Set the color of the logo text */
 }
 
 .header {
@@ -29,7 +10,21 @@ body {
     color: #111275;
     padding: 20px;
     display: flex;
-    /* Add this line to evenly space items */
+}
+
+.container {
+    padding: 0 !important;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.logo {
+    font-family: 'Sublima Extra Bold', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: #111275;
+    margin-right: 20px;
 }
 
 .header-buttons {
@@ -37,26 +32,23 @@ body {
 }
 
 .button {
+    border: none;
     background-color: #ffffff;
     color: #4f5960;
-    /* Change the default color to dusty */
     font-family: 'Alesand Extra Bold', sans-serif;
-    border: none;
     font-size: 13px;
     font-weight: bold;
-    /* Make the text bold */
     padding: 10px 5px;
     margin-right: 2px;
     cursor: pointer;
     transition: color 0.3s;
-    /* Add transition for smooth color change */
 }
 
 .button:hover {
     color: #111275;
-    /* Change to your desired hover color */
 }
 
+/* First Section */
 .first-section-content {
     display: flex;
     margin-left: 20px;
@@ -68,10 +60,7 @@ body {
     display: flex;
     flex-direction: column;
     padding-right: 20px;
-    /* Adjust as needed */
 }
-
-
 
 .first-name,
 .last-name {
@@ -87,16 +76,13 @@ body {
 
 .last-name {
     font-family: 'Helvetica';
-    /* Arial, Helvetica, Georgia, Sans-serif;*/
     color: #111275;
-    /*font-family: 'Organetto Ultra Bold', sans-serif;*/
     font-weight: 800;
     font-size: 80px;
     margin-left: 120px;
 }
 
 .vertical-bar {
-    color: #111275;
     border-left: 8px solid #111275;
     flex: 1;
     width: 50px;
@@ -104,7 +90,6 @@ body {
 
 .bar-and-paragraph {
     display: flex;
-    /* New flex container */
     flex-direction: row;
 }
 
@@ -114,7 +99,6 @@ body {
     font-size: 14px;
     margin-left: 20px;
     margin-top: 10px;
-    /* Adjust as needed */
 }
 
 .first-section-content .right {
@@ -130,8 +114,6 @@ body {
     max-height: 100%;
 }
 
-
-
 .horizontal-bar {
     width: 100%;
     border-top: 2px solid black;
@@ -140,55 +122,35 @@ body {
 
 
 /*second section*/
-
 .second-section-wrapper {
     background-color: white;
-    /* Set background color to white */
     padding: 20px;
-    /* Add padding for spacing */
 }
 
 .second-section-content {
     display: flex;
     margin-top: 20px;
-    /* Adjust as needed */
     background-color: black;
-    /* Set background color to black */
     color: white;
-    /* Set text color to white for better contrast */
 }
 
 
 
 .second-section-content .left {
-    margin-top: 5%;
     flex: 0 0 30%;
-    /* Set width to 30% */
-    padding: 15px;
     display: flex;
-
-    /* Center the image vertically */
     justify-content: center;
-
-    /* Adjust margin */
-    /* Center the image horizontally */
 }
 
 .second-section-content .left img {
     max-width: 100%;
-    /* Limit image width to 100% of its container */
     height: auto;
-    /* Maintain aspect ratio */
 }
 
 .second-section-content .right {
     margin-top: 5%;
     margin-left: 10px;
     flex: 0 0 70%;
-    /* Set width to 70% */
-
-    /* Adjust margin */
-    /* Added margin-left to position content from 30% */
 }
 
 .second-section-content .right h2 {
@@ -205,18 +167,13 @@ body {
     font-weight: 400;
     color: #fff;
     margin-left: 5%;
-    /* Added this */
     margin-right: 10%;
-    /* Added this */
     margin-top: 0;
-    /* Added this */
-
 }
 
 .second-section-content .right h4 {
     margin-top: 5%;
     margin-bottom: 5%;
-    /* Added this */
     font-family: "Montserrat", sans-serif;
     font-size: 20px;
     font-weight: bold;
@@ -258,10 +215,7 @@ h3 {
     margin-top: 20px;
     margin-bottom: 5%;
     margin-left: auto;
-    /* Added this */
     margin-right: auto;
-    /* Added this */
-
 }
 
 .second-section-content .right .extra {
@@ -271,7 +225,6 @@ h3 {
     font-weight: bold;
     color: #fff;
     margin-bottom: 0;
-    /* Added this */
 }
 
 /*third section*/
@@ -279,7 +232,6 @@ h3 {
 .third-section-content {
     position: relative;
     margin-bottom: 20px;
-    /* Relative positioning to contain absolutely positioned elements */
 }
 
 .third-section-content .background-image {
@@ -290,7 +242,6 @@ h3 {
     height: 100%;
     background-image: url('assets/faisalalikhan_background.png');
     background-size: cover;
-    /* Set background image and cover the entire section */
 }
 
 .third-section-content .content {
@@ -298,13 +249,11 @@ h3 {
     z-index: 1;
     width: 60%;
     margin-left: auto;
-    /* Push to the right */
 }
 
 .third-section-content .text-content {
     position: relative;
     padding-top: 40px;
-    /* Adjust as needed */
 }
 
 .third-section-content h1 {
@@ -324,7 +273,6 @@ h3 {
     font-weight: 400;
     color: rgb(28, 28, 31);
     margin-right: 10px;
-
 }
 
 .header-row-2 button {
@@ -346,14 +294,11 @@ h3 {
 .header-row-2 button:hover {
     background-color: rgb(18, 18, 117);
     border: 1px solid rgb(18, 18, 117);
-    /* Change to desired button color */
     color: #fff;
-    /* Change to desired text color */
 }
 
 .text-content {
     margin-right: 5px;
-    /* Adjusts margins */
 }
 
 .header-row-1 {
@@ -361,14 +306,12 @@ h3 {
     align-items: end;
     gap: 10px;
     margin: 0;
-    /* Removes all margins */
 }
 
 .header-row-2 {
     display: flex;
     gap: 10px;
     margin: 0;
-    /* Removes all margins */
 }
 
 .third-section-content .logos {
@@ -413,7 +356,6 @@ h3 {
     color: rgb(255, 255, 255);
 }
 
-
 .third-section-content .description p {
     font-family: "Montserrat", sans-serif;
     font-size: 12.3px;
@@ -423,47 +365,76 @@ h3 {
     margin-left: auto;
     text-align: left;
     line-height: 2.0;
-
 }
 
 /*Fourth Section*/
 .fourth-section {
+    background-image: url('assets/team-photo.jpg');
+    background-size: 100% 60%;
+    background-repeat: no-repeat;
+    background-position: center center;
     position: relative;
     width: 100%;
     height: 100vh;
-    /* Assuming you want the container to take the full height of the viewport */
     display: flex;
     justify-content: center;
-    /* Center horizontally */
     align-items: center;
     margin-bottom: 30px;
-    /* Center vertically */
 }
 
-.behind {
-    position: absolute;
-    margin: 0;
-    border: 1px red solid;
-    height: auto;
-    /* Maintain the image's aspect ratio */
-    max-height: 85%;
-    width: 100%;
-    z-index: 0;
-    /* Limit the height of the image */
-}
 
-.center {
+.front {
+    width: 75%;
+    height: 500px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow: 0px 0px 3px grey;
     position: relative;
-    width: 70%;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
     height: 100%;
-    z-index: 1;
+    transition: 1s;
+
     /* Add this line */
 }
 
+/* Styles for the arrow buttons */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    outline: none;
+    z-index: 2;
+}
+
+.arrow:focus {
+    outline: none;
+    border: none;
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+.arrow-img {
+    width: 50px;
+    height: 50px;
+}
 
 /*fifth Section*/
-
-
 .fifth-section {
     margin-bottom: 50px;
     position: relative;
@@ -471,18 +442,14 @@ h3 {
 
 .card-video-top {
     width: 100%;
-    /* Adjust as needed */
     max-width: 500px;
-    /* Adjust as needed */
     height: auto;
     object-fit: contain;
-    /* Add this line */
 }
 
 .carousel-container {
     position: relative;
     width: 80%;
-    /* Adjust as needed */
     margin: auto;
 }
 
@@ -501,12 +468,10 @@ h3 {
 
 #prevButton {
     left: -50px;
-    /* Adjust as needed */
 }
 
 #nextButton {
     right: -50px;
-    /* Adjust as needed */
 }
 
 #prevButton:focus,
@@ -536,7 +501,6 @@ h3 {
     color: black;
     font-family: "Montserrat", sans-serif;
     opacity: 0.7;
-    /* Adjust as needed */
 }
 
 .card .card-body .card-text.designation {
@@ -545,7 +509,6 @@ h3 {
     color: black;
     font-family: "Montserrat", sans-serif;
     opacity: 0.5;
-    /* Adjust as needed */
 }
 
 .card .card-body .card-text.name {
@@ -556,9 +519,7 @@ h3 {
     font-family: "Montserrat", sans-serif;
 }
 
-
 /*Sixth section*/
-
 .sixth-section .card-body {
     text-align: center;
 }
@@ -566,7 +527,6 @@ h3 {
 .sixth-section {
     position: relative;
     height: 1000px;
-    /* Adjust as needed */
     margin-bottom: 10px;
     background-color: black;
 }
@@ -575,9 +535,7 @@ h3 {
     position: relative;
     padding: 50px;
     min-height: 900px;
-    /* Adjust as needed */
     height: auto;
-    /* Adjust as needed */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -586,9 +544,7 @@ h3 {
 
 .background {
     width: calc(100% - 100px);
-    /* Adjust as needed */
     height: calc(100% - 100px);
-    /* Adjust as needed */
     background-size: cover;
     background-position: center;
 }
@@ -597,7 +553,6 @@ h3 {
     width: calc(100% - 50px);
     bottom: 500px;
     position: absolute;
-    /* Adjust as needed */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -607,48 +562,39 @@ h3 {
     width: 18%;
     height: 250px;
     position: relative;
-    /* Adjust as needed */
 }
 
 .social-cards .card:hover {
     transform: translateY(-10px);
-    /* Add this line */
 }
 
 .social-cards .card::after {
     content: '';
     position: absolute;
     bottom: -15px;
-    /* Half the height of the diamond */
     left: calc(50% - 15px);
-    /* Center the diamond */
     width: 30px;
     height: 40px;
     background: white;
-    /* Match the card's background color */
     transform: rotate(45deg);
 }
 
 .social-cards .card:nth-child(1) {
     margin-left: 20px;
-    /* Adjust as needed */
 }
 
 .social-cards .card:nth-child(5) {
     margin-right: 20px;
-    /* Adjust as needed */
 }
 
 .social-cards .card:nth-child(2),
 .social-cards .card:nth-child(4) {
     margin-bottom: 60px;
-    /* Adjust as needed */
 }
 
 .social-cards .card:nth-child(3) {
     margin-bottom: 100px;
 }
-
 
 .card-text.username {
     font-family: 'Montserrat', sans-serif;
@@ -682,7 +628,6 @@ h3 {
     color: rgb(76, 76, 76);
 }
 
-
 .sixth-section .center-text {
     font-family: 'Montserrat', sans-serif;
     font-size: 90.4064px;
@@ -693,7 +638,6 @@ h3 {
     position: absolute;
     width: 100%;
     bottom: 15.5%;
-    /* Adjust as needed */
 }
 
 .sixth-section .description-text {
@@ -706,7 +650,6 @@ h3 {
     padding: 20px;
     position: relative;
     top: 150px;
-    /* Adjust as needed */
 }
 
 /*Seventh Section*/
@@ -720,17 +663,13 @@ h3 {
 .seventh-section .columns {
     display: flex;
     padding: 50px;
-
-    /* or grid, depending on your layout */
-    /* other flex or grid properties as needed */
 }
 
 .column img {
     width: 100px;
-    /* Adjust as needed */
     height: auto;
-    /* Maintain aspect ratio */
 }
+
 
 .seventh-section .column:nth-child(1) {
     width: 20%;
@@ -748,9 +687,7 @@ h3 {
 
 .seventh-section .column {
     box-sizing: border-box;
-    /* Include padding and border in element's total width and height */
 }
-
 
 .seventh-section h2 {
     font-family: 'Montserrat', sans-serif;
@@ -770,34 +707,24 @@ h3 {
 
 .seventh-section .column ul li {
     margin: 20px 0;
-    /* Adjust as needed */
 }
 
 .seventh-section .column ul li i {
     margin-right: 10px;
-    /* Adjust as needed */
 }
 
 .seventh-section ul {
     list-style-type: none;
-    /* Remove bullet points */
     padding: 0;
-    /* Remove padding */
 }
 
 .seventh-section column ul li {
     background: #fff;
-    /* Button background color */
     color: #000;
-    /* Button text color */
     padding: 10px;
-    /* Button padding */
     margin-bottom: 10px;
-    /* Space between buttons */
     cursor: pointer;
-    /* Change cursor on hover */
 }
-
 
 .seventh-section ul li,
 .seventh-section form label {
@@ -806,21 +733,19 @@ h3 {
 
 .seventh-section .column ul li img {
     width: 20px;
-    /* Adjust as needed */
     height: 20px;
-    /* Adjust as needed */
+}
+.seventh-section .social-icon {
+    margin-right: 3px;
 }
 
 .seventh-section .column:nth-child(5) form label {
     display: block;
-    /* Make options display in a column */
 }
 
 .seventh-section .column:nth-child(5) form input[type="text"] {
     width: 100%;
-    /* Increase the size of the textbox */
     padding: 10px;
-    /* Add padding to the textbox */
 }
 
 .seventh-section form input[type="text"],
@@ -839,8 +764,6 @@ h3 {
     line-height: 11.2px;
     color: rgb(255, 255, 255);
     border: 1px solid rgba(255, 255, 255, 0.3);
-    /* 0.5 is the opacity */
-
 }
 
 .seventh-section .column:nth-child(5) form button:hover {
@@ -851,32 +774,25 @@ h3 {
 .seventh-section .divider {
     border: 0;
     border-top: 1px solid #000;
-    /* Adjust color as needed */
     margin: 20px 0;
-    /* Adjust as needed */
 }
 
 .seventh-section .footer {
     text-align: center;
     font-size: 12px;
-    /* Adjust as needed */
 }
 
 .seventh-section .divider {
     border: 0;
     border-top: 1px solid #000;
-    /* Adjust color as needed */
     margin: 20px 0;
-    /* Adjust as needed */
 }
 
 .seventh-section .footer {
     text-align: center;
     font-size: 12px;
-    /* Adjust as needed */
 }
 
 .seventh-section .large-font {
     font-size: 12px;
-    /* Adjust the value as needed */
 }

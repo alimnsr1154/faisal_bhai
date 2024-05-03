@@ -14,7 +14,6 @@
 </head>
 
 <body>
-
     <div class="container">
         <div class="header">
             <div class="logo">F.</div>
@@ -130,150 +129,37 @@
                 </div>
             </div>
         </div>
-        <!-- fourth sections -->
+        <!-- Fourth Section -->
         <div class="fourth-section">
-            <img class="behind" src="assets/sameer bhai (1).jpg" alt="behind Image">
-            <img class="center" src="assets/sameer bhai (1).jpg" alt="behind Image">
-        </div>
-        <div class="fifth-section">
-            <button id="prevButton"><img src="assets/left.png" alt="Previous"></button>
-            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                <!-- Card 1 here -->
-                <div class="card">
-                    <video class="card-video-top" autoplay muted loop>
-                        <source src="assets/testimonails/luis_testimonal.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <div class="card-body">
-                        <p class="card-text message ">"Ryan Serhant is the Authority on all the things selling"</p>
-                        <p class="card-text name">Garry Vaynerchuk</p>
-                        <p class="card-text designation">Entrepreneur <br>and Speaker</p>
-                    </div>
-                </div>
-
-                <!-- Card 2 here -->
-                <div class="card">
-                    <video class="card-video-top" autoplay muted loop>
-                        <source src="assets/testimonails/iqbal_testimonal.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <div class="card-body">
-                        <p class="card-text  message">"Ryan's journey as he sharpened his own sales skills is truly
-                            inspiring and
-                            something every salesperson or entrepreneur
-                            needs to learn from."</p>
-                        <p class="card-text name"> Daymond John</p>
-                        <p class="card-text designation">"Star of ABC's Shark Tank" <br> and Entrepreneur</p>
-                    </div>
-                </div>
-                <!-- Card 3 here -->
-                <div class="card">
-                    <img src="assets/logo.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text  message">Message 5</p>
-                        <p class="card-text name">Name 5</p>
-                        <p class="card-text designation">Designation 5</p>
-                    </div>
-                </div>
-
-
-                <!-- Card 4 here -->
-                <div class="card">
-                    <img src="assets/logo.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text  message">Message 4</p>
-                        <p class="card-text name">Name 4</p>
-                        <p class="card-text designation">Designation 4</p>
-                    </div>
-                </div>
-                <!-- Card 5 here -->
-                <div class="card">
-                    <video class="card-video-top" autoplay muted loop>
-                        <source src="assets/testimonails/suzana_paklar_testimonail.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <div class="card-body">
-                        <p class="card-text  message">"Ryan's journey as he sharpened his own sales skills is truly
-                            inspiring and
-                            something every salesperson or entrepreneur
-                            needs to learn from."</p>
-                        <p class="card-text name"> Daymond John</p>
-                        <p class="card-text designation">"Star of ABC's Shark Tank" <br> and Entrepreneur</p>
-                    </div>
-                </div>
-                <!-- More carousel items as needed -->
+            <button class="arrow left-arrow" onclick="goPrev()">
+                <img class="arrow-img" src="assets/arrows/left.png" alt="Previous">
+            </button>
+            <div class="front">
             </div>
-            <button id="nextButton"><img src="assets/right.png" alt="Next"></button>
+            <button class="arrow right-arrow" onclick="goNext()">
+                <img class="arrow-img" src="assets/arrows/right.png" alt="Next">
+            </button>
+        </div>
+        <!-- Fifth Section -->
+        <div class="fifth-section">
+            <button id="prevButton"><img src="assets/arrows/left_blue.png" alt="Previous"></button>
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <!-- Cards will be inserted here by JavaScript -->
+            </div>
+            <button id="nextButton"><img src="assets/arrows/right_blue.png" alt="Next"></button>
         </div>
         <!-- Sixth Section -->
         <div class="sixth-section">
             <div class="black-background">
                 <img class="background" src="assets/team-photo.jpg" alt="Background Image">
                 <div class="social-cards">
-                    <!-- LinkedIn Card -->
-                    <div class="card linkedin"
-                        onclick="window.open('https://www.linkedin.com/in/faisal-ali-khan-354549114/?originalSubdomain=pk', '_blank')">
-                        <img src="assets/social-media icons/linkedin.png" class="card-img-top" alt="LinkedIn">
-                        <div class="card-body">
-                            <p class="card-text username">@faisalalikhan</p>
-                            <p class="card-text followers-count">2000+ </p>
-                            <p class="card-text followers"> Followers</p>
-                            <p class="card-text message">Follow us on LinkedIn</p>
-                        </div>
-                    </div>
-                    <!-- YouTube Card -->
-                    <div class="card youtube"
-                        onclick="window.open(' https://www.youtube.com/@faisalalikhan4409', '_blank')">
-                        <img src="assets/social-media icons/youtube.png" class="card-img-top" alt="YouTube">
-                        <div class="card-body">
-                            <p class="card-text username">@faisalalikhan4409</p>
-                            <p class="card-text followers-count">1000+ </p>
-                            <p class="card-text followers">Subscribers</p>
-                            <p class="card-text message">Subscribe to our YouTube </p>
-                        </div>
-                    </div>
-                    <!-- Instagram Card -->
-                    <div class="card instagram"
-                        onclick="window.open('https://www.instagram.com/faisallalikhan/', '_blank')">
-                        <img src="assets/social-media icons/insta.png" class="card-img-top" alt="Instagram">
-                        <div class="card-body">
-                            <p class="card-text username">@faisalalikhan</p>
-                            <p class="card-text followers-count">1200+ </p>
-                            <p class="card-text followers">Followers</p>
-                            <p class="card-text message">Follow us on Instagram</p>
-                        </div>
-                    </div>
-                    <!-- Facebook Card -->
-                    <div class="card facebook"
-                        onclick="window.open(' https://www.facebook.com/mfaial.ali.9', '_blank')">
-                        <img src="assets/social-media icons/facebook.png" class="card-img-top" alt="Facebook">
-                        <div class="card-body">
-                            <p class="card-text username">@faisalalikhan</p>
-                            <p class="card-text followers-count">4000 </p>
-                            <p class="card-text followers">Likes</p>
-                            <p class="card-text message">Like our Facebook page</p>
-                        </div>
-                    </div>
-                    <!-- X Card -->
-                    <div class="card x" onclick="">
-                        <img src="assets/social-media icons/x.png" class="card-img-top" alt="X">
-                        <div class="card-body">
-                            <p class="card-text username">@faisalalikhan</p>
-                            <p class="card-text followers-count">4000 </p>
-                            <p class="card-text followers">Followers</p>
-                            <p class="card-text message">Follow us on X</p>
-                        </div>
-                    </div>
+                    <!-- Social cards will be inserted here by JavaScript -->
                 </div>
                 <div class="center-text">
-                    Engage<br>
-                    With Me<br>
-                    24/7
+                    <!-- Center text will be inserted here by JavaScript -->
                 </div>
                 <div class="description-text">
-                    After spending over a decade in real estate and entertainment, I'd love to share what I've learned
-                    <br> and connect with
-                    those who've supported me since the start of my career.
+                    <!-- Description text will be inserted here by JavaScript -->
                 </div>
             </div>
         </div>
@@ -315,11 +201,26 @@
                         <li><i class="fas fa-phone"></i> Phone Number</li>
                         <li><i class="fas fa-envelope"></i> Email</li>
                         <li>
-                            <img src="assets/social-media icons/instalogo.png" alt="Social 1">
-                            <img src="assets/social-media icons/ytlogo.png" alt="Social 2">
-                            <img src="assets/social-media icons/fclogo.png" alt="Social 3">
-                            <img src="assets/social-media icons/linkedin.png" alt="Social 4">
-                            <img src="assets/social-media icons/xlogo.png" alt="Social 5">
+                            <a href="https://www.instagram.com/faisallalikhan/" target="_blank">
+                                <img class="social-icon" src="assets/social-media icons/white_insta_logo.png"
+                                    alt="Social 1">
+                            </a>
+                            <a href="https://www.youtube.com/@faisalalikhan4409" target="_blank">
+                                <img class="social-icon" src="assets/social-media icons/whtie_youtube_logo.png"
+                                    alt="Social 2">
+                            </a>
+                            <a href="https://www.facebook.com/mfaial.ali.9" target="_blank">
+                                <img class="social-icon" src="assets/social-media icons/fclogo.png" alt="Social 3">
+                            </a>
+                            <a href="https://www.linkedin.com/in/faisal-ali-khan-354549114/?originalSubdomain=pk"
+                                target="_blank">
+                                <img class="social-icon" src="assets/social-media icons/white_linkedin_logo.png"
+                                    alt="Social 4">
+                            </a>
+                            <a href="https://www.example.com/your_account" target="_blank">
+                                <img class="social-icon" src="assets/social-media icons/white_x_logo.png"
+                                    alt="Social 5">
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -335,14 +236,11 @@
                 </div>
             </div>
             <hr class="divider"> <!-- Divider line -->
-
             <div class="footer">
                 © 2024 Serhant LLC. All Rights Reserved. <a href="#">Sitemap</a>. <a href="#">Privacy Policy</a> and <a
                     href="#">Terms of Use</a>
             </div>
         </div>
-
-
     </div>
     <!-- Bootstrap JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -350,30 +248,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            var carousel = $('#carouselExampleControls'); // Replace with your carousel's selector
-
-            carousel.slick({
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                arrows: false,
-                focusOnSelect: true,
-                centerMode: true, // Enables centered view with partial prev/next slides
-                centerPadding: '0px', // Removes padding
-                autoplay: true, // Enables automatic sliding
-                autoplaySpeed: 5000 // Sets the delay between slides to 5 seconds
-            });
-
-            $('#prevButton').on('click', function () {
-                carousel.slick('slickPrev');
-            });
-
-            $('#nextButton').on('click', function () {
-                carousel.slick('slickNext');
-            });
-        });
-    </script>
+    <script src="script.js"></script>
+    <script src="fourth.js"></script>
+    <script src="fifth.js"></script>
+    <script src="sixth.js"></script>
 </body>
 
 </html>
