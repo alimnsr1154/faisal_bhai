@@ -8,7 +8,6 @@ $(document).ready(function () {
         slidesToScroll: 1,
         arrows: false,
         focusOnSelect: true,
-        muted: true,
         centerMode: true, // Enables centered view with partial prev/next slides
         centerPadding: '0px', // Removes padding
         autoplay: true, // Enables automatic sliding
