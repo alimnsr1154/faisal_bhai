@@ -50,6 +50,23 @@ body {
     flex: 1;
 }
 
+@media (max-width: 768px) {
+    .first-section-content {
+        flex-direction: column;
+    }
+
+    .first-section-content .left,
+    .first-section-content .right {
+        width: 100%;
+        height: 100vh;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 .first-section-content .left {
     flex: 1;
     display: flex;
@@ -223,6 +240,30 @@ h3 {
     margin-bottom: 0;
 }
 
+
+@media (max-width: 768px) {
+    .second-section-content {
+        flex-direction: column;
+    }
+
+    .sub-headings {
+        flex-direction: column;
+    }
+
+    .second-section-content .left,
+    .second-section-content .right {
+        width: 100%;
+        height: 100%;
+        /* Change this line */
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
 /*third section*/
 
 .third-section-content {
@@ -271,8 +312,13 @@ h3 {
     margin-right: 10px;
 }
 
-.header-row-2 button {
-    margin-left: 20px;
+.column-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.column-wrapper button {
+    margin-left: 50px;
     margin-top: 15px;
     margin-bottom: 10px;
     font-family: "Montserrat", sans-serif;
@@ -280,6 +326,7 @@ h3 {
     font-weight: 700;
     color: rgb(18, 18, 117);
     width: 150px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -300,12 +347,6 @@ h3 {
 .header-row-1 {
     display: flex;
     align-items: end;
-    gap: 10px;
-    margin: 0;
-}
-
-.header-row-2 {
-    display: flex;
     gap: 10px;
     margin: 0;
 }
@@ -363,9 +404,65 @@ h3 {
     line-height: 2.0;
 }
 
+@media (max-width: 768px) {
+    .third-section-content .background-image {
+        display: none;
+        /* Hide the background image */
+    }
+
+    .header-row-1 {
+        flex-direction: column;
+        /* Stack the elements vertically */
+        align-items: center;
+        /* Center align the elements */
+    }
+
+    .logos {
+        flex-wrap: wrap;
+        /* Allow the logos to wrap to the next line */
+        justify-content: center;
+        /* Center the logos */
+    }
+
+    .logos img {
+        width: 45%;
+        /* Adjust the width of the logos */
+        margin-bottom: 10px;
+        /* Add some space below each logo */
+    }
+
+    .video-description {
+        flex-direction: column;
+        /* Stack the video and description vertically */
+        align-items: center;
+        /* Center align the video and description */
+    }
+
+    .third-section-content .vid {
+        width: 100%;
+        /* Make the video take up the full width */
+    }
+
+    .third-section-content .description {
+        width: 100%;
+        /* Make the description take up the full width */
+        padding: 10px;
+        /* Reduce the padding */
+    }
+
+    .third-section-content .description p {
+        width: 100%;
+        /* Make the paragraph take up the full width */
+        margin: 0 auto;
+        /* Center the paragraph */
+    }
+}
+
+
+
 /*Fourth Section*/
 .fourth-section {
-    background-image: url('assets/team-photo.jpg');
+
     background-size: 100% 60%;
     background-repeat: no-repeat;
     background-position: center center;
@@ -377,7 +474,6 @@ h3 {
     align-items: center;
     margin-bottom: 30px;
 }
-
 
 .front {
     width: 75%;
@@ -429,6 +525,28 @@ h3 {
     width: 50px;
     height: 50px;
 }
+
+
+@media (max-width: 768px) {
+    /* other styles */
+
+    .fourth-section {
+        background-image: none;
+        /* Remove the background image */
+    }
+
+    .front {
+        width: 100%;
+        /* Make the front images take up the full width */
+        height: auto;
+        /* Adjust the height as needed */
+        margin: 0;
+        /* Remove the margins */
+    }
+
+    /* .arrow class removed */
+}
+
 
 /*fifth Section*/
 .fifth-section {
@@ -523,6 +641,26 @@ h3 {
     color: #111275;
     font-weight: bold;
     font-family: "Montserrat", sans-serif;
+}
+
+
+/* Existing CSS... */
+/* Existing CSS... */
+
+/* Hide arrow buttons on mobile */
+@media (max-width: 768px) {
+
+    /* Adjust breakpoint as needed */
+    .fifth-section #prevButton,
+    .fifth-section #nextButton {
+        display: none;
+    }
+}
+
+/* Ensure only one carousel item is visible at a time */
+.fifth-section .carousel .carousel-item {
+    flex: 0 0 auto;
+    max-width: 100%;
 }
 
 /*Sixth section*/
@@ -656,6 +794,41 @@ h3 {
     padding: 20px;
     position: relative;
     top: 150px;
+}
+
+/* Styles for smaller screens */
+@media (max-width: 767px) {
+    .sixth-section {
+        height: auto;
+    }
+
+    .social-cards {
+        width: 100%;
+        position: relative;
+        /* Change to relative positioning */
+        flex-direction: column;
+        align-items: center;
+        bottom: auto;
+        /* Remove bottom positioning */
+    }
+
+    .social-cards .card {
+        width: 90%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .sixth-section .center-text {
+        display: none;
+        /* Remove top positioning */
+    }
+
+    .sixth-section .description-text {
+        position: relative;
+        /* Change to relative positioning */
+        top: auto;
+        /* Remove top positioning */
+    }
 }
 
 /*Seventh Section*/
@@ -802,4 +975,26 @@ h3 {
 
 .seventh-section .large-font {
     font-size: 12px;
+}
+
+/* Styles for mobile */
+@media (max-width: 768px) {
+    .seventh-section .columns {
+        flex-direction: column;
+    }
+
+    .seventh-section .column:nth-child(1) {
+        margin-bottom: 20px;
+        order: -1;
+    }
+
+    .seventh-section .column:nth-child(4),
+    .seventh-section .column:nth-child(5) {
+        width: 100%;
+    }
+
+    .seventh-section .column:nth-child(2),
+    .seventh-section .column:nth-child(3) {
+        display: none;
+    }
 }

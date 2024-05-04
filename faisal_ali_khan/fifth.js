@@ -3,15 +3,22 @@
 $(document).ready(function () {
     var carousel = $('#carouselExampleControls'); // Replace with your carousel's selector
 
-    carousel.slick({
+    // Initialize the carousel after all items have been added
+    $(carousel).slick({
+        infinite: true,
         slidesToShow: 3,
-        slidesToScroll: 1,
-        arrows: false,
-        focusOnSelect: true,
-        centerMode: true, // Enables centered view with partial prev/next slides
-        centerPadding: '0px', // Removes padding
-        autoplay: true, // Enables automatic sliding
-        autoplaySpeed: 5000 // Sets the delay between slides to 5 seconds
+        slidesToScroll: 3,
+        arrows: false, // Add this line
+        responsive: [
+            {
+                breakpoint: 768, // breakpoint at 768px
+                settings: {
+                    slidesToShow: 1, // show 1 slide below this breakpoint
+                    slidesToScroll: 1
+                }
+
+            }
+        ]
     });
 
     $('#prevButton').on('click', function () {

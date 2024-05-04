@@ -46,6 +46,10 @@ const slideImage = () => {
     fourthSectionDiv.style.backgroundImage = `url('${images[nextImageIndex]}')`;
 };
 
+// Call slideImage once to display the first image
+slideImage();
+
+
 const goPrev = () => {
     if (counter > 0) {
         counter--;
