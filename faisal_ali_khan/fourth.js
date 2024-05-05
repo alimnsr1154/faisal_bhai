@@ -69,3 +69,25 @@ const goNext = () => {
     }
     slideImage();
 };
+
+
+
+//Animation
+
+// Select the section
+const fourthSection = document.querySelector('.fourth-section');
+
+// Create an intersection observer
+const observer4 = new IntersectionObserver((entries) => {
+    // Loop over the entries
+    entries.forEach((entry) => {
+        // If the element is in the viewport
+        if (entry.isIntersecting) {
+            // Add the animation
+            entry.target.style.animation = 'fade-in 3s ease-out forwards';
+        }
+    });
+});
+
+// Start observing the section
+observer4.observe(fourthSection);
