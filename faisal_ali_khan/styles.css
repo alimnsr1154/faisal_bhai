@@ -166,7 +166,7 @@ body {
 
 
 .second-section-content .left {
-    flex: 0 0 30%;
+    flex: 0 0 35%;
     display: flex;
     justify-content: center;
 }
@@ -177,10 +177,26 @@ body {
 }
 
 .second-section-content .right {
-    margin-top: 5%;
+    position: relative;
     margin-left: 10px;
-    flex: 0 0 70%;
+    flex: 0 0 65%;
 }
+
+.second-section-content .right::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/mobile_mockups.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    /* Adjust the opacity */
+    z-index: -1;
+}
+
 
 .second-section-content .right h2 {
     font-family: "Montserrat", sans-serif;

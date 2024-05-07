@@ -27,36 +27,29 @@ $(document).ready(function () {
 var cards = [
     {
         type: 'video',
-        src: 'assets/testimonails/luis_testimonal.mp4',
-        message: 'Ryan Serhant is the Authority on all the things selling',
+        src: 'assets/testimonails/luis_testimonal - Trim.mp4',
+        message: 'Faisal have a great visual skill for technology and start ups when it comes to marketing and sales. He helped both of our companies to get great attention in B2B and B2C market. His ability to connect brand with customers is really impressive we are 100% satisfied and love to always get his services',
         name: 'Loius',
         designation: 'Cofounder PromoML - Netherlands'
     },
     {
         type: 'video',
-        src: 'assets/testimonails/iqbal_testimonal.mp4',
-        message: "Ryan's journey as he sharpened his own sales skills is truly inspiring and something every salesperson or entrepreneur needs to learn from.",
+        src: 'assets/testimonails/iqbal_testimonal - Trim.mp4',
+        message: "We were launching our APP and needed a high end celebrity included marketing campaigns and Faisal did an amazing work way higher  than our expectation. Later on we had project lambo a crypto and blockchain project in which again he helped us in branding and high quality visuals and video creation. I definitely recommend him!",
         name: 'Iqbal Ullah',
         designation: '"OUI SELECT LTD" - London,UK'
     },
     {
-        type: 'image',
-        src: 'assets/logo.png',
+        type: 'video',
+        src: 'assets/testimonails/eman_testimonal - Trim.mp4',
         message: 'Message 5',
-        name: 'Name 5',
+        name: 'Eman',
         designation: 'Designation 5'
     },
     {
-        type: 'image',
-        src: 'assets/logo.png',
-        message: 'Message 4',
-        name: 'Name 4',
-        designation: 'Designation 4'
-    },
-    {
         type: 'video',
-        src: 'assets/testimonails/suzana_paklar_testimonail.mp4',
-        message: "Ryan's journey as he sharpened his own sales skills is truly inspiring and something every salesperson or entrepreneur needs to learn from.",
+        src: 'assets/testimonails/suzana_paklar_testimonail - Trim.mp4',
+        message: "NGO and International Organizations are always a tricky field for documentaries and agenda based films and I must say Faisal always did a great job working for UNDP,  USIP and now for UN Migration. His story telling ability is well matured and emotional that we do need in such initiatives  and I hope he will keep on serving the humanity through his artistic branding, web development and video creation for documentaries.",
         name: 'Suzana Paklar',
         designation: '"Senior Program Coordinator" - UN Migration'
     }
@@ -74,6 +67,7 @@ cards.forEach(function (card) {
         mediaElement.autoplay = true;
         mediaElement.muted = true;
         mediaElement.loop = true;
+        mediaElement.playsinline = true; // Add this line
 
         var sourceElement = document.createElement('source');
         sourceElement.src = card.src;
