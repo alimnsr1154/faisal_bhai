@@ -1,4 +1,4 @@
-var images = ['assets/sameer-bhai.jpg', 'assets/team-photo.jpg', 'assets/teampic.png', 'assets/sameer-bhai.jpg', 'assets/team-photo.jpg', 'assets/teampic.png', 'assets/sameer-bhai.jpg', 'assets/team-photo.jpg', 'assets/teampic.png',];
+var images = ['assets/team-pics/teampic1.jpg', 'assets/team-pics/teampic2.jpg', 'assets/team-pics/teampic3.png', 'assets/team-pics/teampic4.jpg'];
 const frontDiv = document.querySelector('.front');
 
 // Remove any existing images
