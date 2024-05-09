@@ -332,7 +332,8 @@ h3 {
     width: 100%;
     height: 100%;
     background-image: url('assets/faisalalikhan_background.png');
-    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
 }
 
 .third-section-content .content {
@@ -520,7 +521,7 @@ h3 {
     background-position: center center;
     position: relative;
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     justify-content: center;
     align-items: center;
