@@ -27,32 +27,40 @@ $(document).ready(function () {
 var cards = [
     {
         type: 'video',
-        src: 'assets/testimonails/luis_testimonal - Trim.mp4',
+        src: 'assets/testimonails/4.mp4',
         message: 'Faisal have a great visual skill for technology and start ups when it comes to marketing and sales. He helped both of our companies to get great attention in B2B and B2C market. His ability to connect brand with customers is really impressive we are 100% satisfied and love to always get his services',
         name: 'Loius',
         designation: 'Cofounder PromoML - Netherlands'
     },
     {
         type: 'video',
-        src: 'assets/testimonails/iqbal_testimonal - Trim.mp4',
+        src: 'assets/testimonails/5.mp4',
         message: "We were launching our APP and needed a high end celebrity included marketing campaigns and Faisal did an amazing work way higher  than our expectation. Later on we had project lambo a crypto and blockchain project in which again he helped us in branding and high quality visuals and video creation. I definitely recommend him!",
         name: 'Iqbal Ullah',
         designation: '"OUI SELECT LTD" - London,UK'
     },
     {
         type: 'video',
-        src: 'assets/testimonails/eman_testimonal - Trim.mp4',
-        message: 'Message 5',
-        name: 'Eman',
-        designation: 'Designation 5'
+        src: 'assets/testimonails/2.mp4',
+        message: "We were launching our APP and needed a high end celebrity included marketing campaigns and Faisal did an amazing work way higher  than our expectation. Later on we had project lambo a crypto and blockchain project in which again he helped us in branding and high quality visuals and video creation. I definitely recommend him!",
+        name: 'Iqbal Ullah',
+        designation: '"OUI SELECT LTD" - London,UK'
     },
     {
         type: 'video',
-        src: 'assets/testimonails/suzana_paklar_testimonail - Trim.mp4',
+        src: 'assets/testimonails/1.mp4',
+        message: "We were launching our APP and needed a high end celebrity included marketing campaigns and Faisal did an amazing work way higher  than our expectation. Later on we had project lambo a crypto and blockchain project in which again he helped us in branding and high quality visuals and video creation. I definitely recommend him!",
+        name: 'Iqbal Ullah',
+        designation: '"OUI SELECT LTD" - London,UK'
+    },
+    {
+        type: 'video',
+        src: 'assets/testimonails/3.mp4',
         message: "NGO and International Organizations are always a tricky field for documentaries and agenda based films and I must say Faisal always did a great job working for UNDP,  USIP and now for UN Migration. His story telling ability is well matured and emotional that we do need in such initiatives  and I hope he will keep on serving the humanity through his artistic branding, web development and video creation for documentaries.",
         name: 'Suzana Paklar',
         designation: '"Senior Program Coordinator" - UN Migration'
-    }
+    },
+
 ];
 
 var carousel = document.getElementById('carouselExampleControls');
