@@ -35,22 +35,22 @@ var cards = [
     {
         type: 'video',
         src: 'assets/testimonails/5.mp4',
-        message: "We were launching our APP and needed a high end celebrity included marketing campaigns and Faisal did an amazing work way higher  than our expectation. Later on we had project lambo a crypto and blockchain project in which again he helped us in branding and high quality visuals and video creation. I definitely recommend him!",
-        name: 'Iqbal Ullah',
-        designation: '"OUI SELECT LTD" - London,UK'
+        message: "UNDP  knows the importance of content creation in modern digital world and luckily Faisal helped us a lot in the communication and video content areas for our initiatives and programs. His devotion towards climate change projects and documentaries is really extra ordinary and the way he craft the storytelling and make content engaging is impressive. He did a great job and we are looking forward for more collaborations!",
+        name: 'Ammara Durrani',
+        designation: '"Assistant Resident Representative" - UNDP,Pakistan'
     },
     {
         type: 'video',
         src: 'assets/testimonails/2.mp4',
         message: "We were launching our APP and needed a high end celebrity included marketing campaigns and Faisal did an amazing work way higher  than our expectation. Later on we had project lambo a crypto and blockchain project in which again he helped us in branding and high quality visuals and video creation. I definitely recommend him!",
-        name: 'Iqbal Ullah',
+        name: 'Iqbal Ullah2',
         designation: '"OUI SELECT LTD" - London,UK'
     },
     {
         type: 'video',
         src: 'assets/testimonails/1.mp4',
         message: "We were launching our APP and needed a high end celebrity included marketing campaigns and Faisal did an amazing work way higher  than our expectation. Later on we had project lambo a crypto and blockchain project in which again he helped us in branding and high quality visuals and video creation. I definitely recommend him!",
-        name: 'Iqbal Ullah',
+        name: 'Emman Ali',
         designation: '"OUI SELECT LTD" - London,UK'
     },
     {

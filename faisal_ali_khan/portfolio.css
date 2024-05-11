@@ -1,0 +1,140 @@
+    body {
+        text-align: center;
+    }
+
+    .header {
+        position: relative;
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid #323131;
+        /* This creates a divider after the header */
+    }
+
+    .header::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('assets/Untitled\ design\ \(3\).png');
+        /* Change this */
+        background-repeat: no-repeat;
+        /* Add this to prevent the image from repeating */
+        animation: slideDown 2s ease-out;
+        background-position: center;
+        opacity: 0.9;
+        /* Adjust as needed */
+        z-index: -1;
+    }
+
+    .avatar {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin: 0 auto;
+    }
+
+    .header p {
+
+        animation: fadeIn 2s ease-in;
+        color: #d2d2db;
+        font-family: 'Noyh R Light', sans-serif;
+
+    }
+
+    h2 {
+        text-align: center;
+        font-family: Montserrat, sans-serif;
+        font-size: 50px;
+        font-weight: bold;
+        color: rgb(18, 18, 117);
+        animation: fadeIn 2s ease-in;
+    }
+
+    .content-section {
+
+        border-bottom: 2px solid #323131;
+        /* This creates a divider after every section */
+        display: flex;
+        flex-direction: column;
+        /* This stacks the children vertically */
+        justify-content: space-between;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .text-section,
+    .video-section {
+        width: 100%;
+        /* This makes the sections take up the full width */
+    }
+
+    .video-container {
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%;
+    }
+
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    p {
+        padding: 0 30px;
+    }
+
+    @keyframes slideDown {
+        0% {
+            transform: translateY(-100%);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideFromRight {
+        0% {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideFromLeft {
+        0% {
+            transform: translateX(-100%);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }

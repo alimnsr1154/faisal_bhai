@@ -25,10 +25,15 @@ body {
     display: flex;
 }
 
+a {
+    margin-top: 10px;
+    /* Adjust the value as needed */
+}
+
 .button {
     border: none;
     background-color: #ffffff;
-    color: #4f5960;
+    color: #66717a;
     font-family: 'Alesand Extra Bold', sans-serif;
     font-size: 13px;
     font-weight: bold;
@@ -36,6 +41,11 @@ body {
     margin-right: 2px;
     cursor: pointer;
     transition: color 0.3s;
+}
+
+.button:active,
+.button:focus {
+    outline: none;
 }
 
 .button:hover {
@@ -52,7 +62,7 @@ body {
 
 
 .first-section-content .left {
-    flex: 0.45;
+    flex: 0.50;
     display: flex;
     flex-direction: column;
     padding-right: 20px;
@@ -100,16 +110,27 @@ body {
 }
 
 .first-section-content .right {
-    flex: 0.55;
+    flex: 0.50;
+    position: relative;
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    margin: 100px
 }
 
-.video {
+.video-frame {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 50px;
+    opacity: 0.5;
+}
+
+.video {
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
 .horizontal-bar {
@@ -150,15 +171,28 @@ body {
 
 /*second section*/
 .second-section-wrapper {
-    background-color: white;
+    position: relative;
     padding-left: 30px;
     padding-right: 30px;
+}
+
+.second-section-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.9)), url('assets/mockups/mockup2.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
 }
 
 .second-section-content {
     display: flex;
     margin-top: 20px;
-    background-color: black;
+
     color: white;
 }
 
@@ -176,32 +210,19 @@ body {
 }
 
 .second-section-content .right {
+    padding-top: 25px;
     position: relative;
-    margin-left: 10px;
     flex: 0 0 65%;
 }
 
-.second-section-content .right::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('assets/mobile_mockups.jpg');
-    background-size: cover;
-    background-position: center;
-    opacity: 0.5;
-    /* Adjust the opacity */
-    z-index: -1;
-}
+
 
 
 .second-section-content .right h2 {
     font-family: "Montserrat", sans-serif;
     font-size: 50px;
     font-weight: 800;
-    color: #fff;
+    color: #412525;
     text-align: center;
 }
 
@@ -209,7 +230,7 @@ body {
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
     font-weight: 400;
-    color: #fff;
+    color: #000000;
     margin-left: 5%;
     margin-right: 10%;
     margin-top: 0;
@@ -221,7 +242,7 @@ body {
     font-family: "Montserrat", sans-serif;
     font-size: 20px;
     font-weight: bold;
-    color: #fff;
+    color: #000000;
 }
 
 .second-section-content .additional-info {
@@ -240,7 +261,7 @@ h3 {
     font-family: "Montserrat", sans-serif;
     font-size: 50px;
     font-weight: 800;
-    color: #fff;
+    color: #231c1c;
     white-space: nowrap;
 }
 
@@ -250,12 +271,12 @@ h3 {
     font-family: "Montserrat", sans-serif;
     font-size: 19px;
     font-weight: bold;
-    color: #fff;
+    color: #231c1c;
 }
 
 .second-section-content .right .horizontal-bar {
     width: 90%;
-    border-top: 1px solid rgb(222, 217, 217);
+    border-top: 1px solid #231c1c;
     margin-top: 20px;
     margin-bottom: 5%;
     margin-left: auto;
@@ -267,7 +288,7 @@ h3 {
     font-family: "Montserrat", sans-serif;
     font-size: 19px;
     font-weight: bold;
-    color: #fff;
+    color: #231c1c;
     margin-bottom: 0;
 }
 
@@ -469,8 +490,8 @@ h3 {
     }
 
     .third-section-content .vid {
-        width: 100%;
-        /* Make the video take up the full width */
+        width: 65%;
+        height: auto;
     }
 
     .third-section-content .description {
