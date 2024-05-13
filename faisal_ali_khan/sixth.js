@@ -49,7 +49,7 @@ var socialCards = [
 ];
 
 var centerText = "Engage<br>With Me<br>24/7";
-var descriptionText = "After spending over a decade in real estate and entertainment, I'd love to share what I've learned<br> and connect with those who've supported me since the start of my career.";
+var descriptionText = "After spending over a decade in Media and entertainment Industry, I'd love to share what I've learned<br> and connect with those who've supported me since the start of my career.";
 
 
 // Get the container for the social cards

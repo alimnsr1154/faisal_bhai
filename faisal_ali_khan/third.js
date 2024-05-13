@@ -9,8 +9,13 @@ const observer3 = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         // If the element is in the viewport
         if (entry.isIntersecting) {
-            // Add the animation
-            entry.target.style.animation = 'slideFromBottom 2s ease-out forwards';
+            // If the target is the logos element, apply the blink animation
+            if (entry.target === logos) {
+                entry.target.style.animation = 'blink 3s linear';
+            } else {
+                // Otherwise, apply the slideFromBottom animation
+                entry.target.style.animation = 'slideFromBottom 2s ease-out forwards';
+            }
         }
     });
 });

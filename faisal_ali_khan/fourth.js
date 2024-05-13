@@ -1,4 +1,4 @@
-var images = ['assets/team-pics/teampic1.jpg', 'assets/team-pics/teampic2.jpg', 'assets/team-pics/teampic3.png', 'assets/team-pics/teampic4.jpg'];
+var images = ['assets/team-pics/services pages/slide1.jpg', 'assets/team-pics/services pages/slide2.png', 'assets/team-pics/services pages/slide3.png', 'assets/team-pics/services pages/slide4.png'];
 const frontDiv = document.querySelector('.front');
 
 // Remove any existing images
@@ -33,17 +33,6 @@ const slideImage = () => {
             slide.style.transform = `translateX(-${counter * 100}%)`;
         }
     )
-
-    // Get the next image index
-    let nextImageIndex = counter + 1;
-    if (nextImageIndex >= images.length) {
-        // If at the last image, wrap around to the first image
-        nextImageIndex = 0;
-    }
-
-    // Change the background image of the .fourth-section div
-    const fourthSectionDiv = document.querySelector('.fourth-section');
-    fourthSectionDiv.style.backgroundImage = `url('${images[nextImageIndex]}')`;
 };
 
 // Call slideImage once to display the first image
@@ -70,7 +59,8 @@ const goNext = () => {
     slideImage();
 };
 
-
+// Call goNext every 3 seconds
+setInterval(goNext, 3000);
 
 //Animation
 

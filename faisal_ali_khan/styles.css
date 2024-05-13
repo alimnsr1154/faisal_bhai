@@ -62,7 +62,7 @@ a {
 
 
 .first-section-content .left {
-    flex: 0.50;
+    flex: 0.45;
     display: flex;
     flex-direction: column;
     padding-right: 20px;
@@ -110,11 +110,10 @@ a {
 }
 
 .first-section-content .right {
-    flex: 0.50;
+    flex: 0.55;
     position: relative;
     display: flex;
     flex-direction: column;
-    margin: 100px
 }
 
 .video-frame {
@@ -171,6 +170,7 @@ a {
 
 /*second section*/
 .second-section-wrapper {
+    margin-bottom: 10px;
     position: relative;
     padding-left: 30px;
     padding-right: 30px;
@@ -183,7 +183,7 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.9)), url('assets/mockups/mockup2.jpg');
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.9)), url('assets/mockups/mockup12.jpg');
     background-size: cover;
     background-position: center;
     z-index: -1;
@@ -191,12 +191,10 @@ a {
 
 .second-section-content {
     display: flex;
-    margin-top: 20px;
-
+    margin-top: 40px;
     color: white;
+
 }
-
-
 
 .second-section-content .left {
     flex: 0 0 35%;
@@ -210,34 +208,32 @@ a {
 }
 
 .second-section-content .right {
-    padding-top: 25px;
+    padding-top: 80px;
     position: relative;
     flex: 0 0 65%;
 }
 
-
-
-
 .second-section-content .right h2 {
     font-family: "Montserrat", sans-serif;
-    font-size: 50px;
+    font-size: 60px;
     font-weight: 800;
-    color: #412525;
+    color: #000000;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .second-section-content p {
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: bold;
     color: #000000;
     margin-left: 5%;
     margin-right: 10%;
-    margin-top: 0;
+    margin-top: 20px;
 }
 
 .second-section-content .right h4 {
-    margin-top: 5%;
+    margin-top: 50px;
     margin-bottom: 5%;
     font-family: "Montserrat", sans-serif;
     font-size: 20px;
@@ -261,7 +257,7 @@ h3 {
     font-family: "Montserrat", sans-serif;
     font-size: 50px;
     font-weight: 800;
-    color: #231c1c;
+    color: #000000;
     white-space: nowrap;
 }
 
@@ -271,14 +267,14 @@ h3 {
     font-family: "Montserrat", sans-serif;
     font-size: 19px;
     font-weight: bold;
-    color: #231c1c;
+    color: #000000;
 }
 
 .second-section-content .right .horizontal-bar {
     width: 90%;
     border-top: 1px solid #231c1c;
     margin-top: 20px;
-    margin-bottom: 5%;
+    margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -330,7 +326,6 @@ h3 {
     .second-section-content .right {
         width: 100%;
         height: 100%;
-        /* Change this line */
         padding: 0;
         display: flex;
         flex-direction: column;
@@ -343,26 +338,15 @@ h3 {
 .third-section-content {
     position: relative;
     margin-bottom: 20px;
+    background-color: #ffffff;
 }
 
-.third-section-content .background-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('assets/faisalalikhan_background.png');
-    background-repeat: no-repeat;
-    /* background-size: cover; */
-}
+
 
 .third-section-content .content {
     position: relative;
     z-index: 1;
-    width: 60%;
-    margin-left: auto;
+    width: 100%;
 }
 
 .third-section-content .text-content {
@@ -372,95 +356,30 @@ h3 {
 
 .third-section-content h1 {
     font-family: Montserrat, sans-serif;
-    font-size: 50px;
-    font-weight: 800;
+    font-size: 60px;
+    font-weight: 700;
     color: rgb(18, 18, 117);
-}
-
-.header-row-1 p {
-    opacity: 0.7;
-    position: relative;
-    margin-left: 14%;
-    font-family: Montserrat, sans-serif;
-    font-size: 13px;
-    font-weight: 400;
-    color: rgb(28, 28, 31);
-    margin-right: 10px;
-}
-
-.column-wrapper {
-    display: flex;
-    flex-direction: column;
+    text-align: center;
 }
 
 .text-content {
     margin-right: 5px;
 }
 
-.header-row-1 {
-    display: flex;
-    align-items: end;
-    gap: 10px;
-    margin: 0;
-}
-
 .third-section-content .logos {
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 70px;
 }
 
 .third-section-content .logos img {
-    width: 110px;
-}
-
-.third-section-content .video-description {
-    position: relative;
-    display: flex;
-    width: 100%;
-    height: auto;
-    background-color: #181414;
-    margin-left: auto;
-}
-
-.third-section-content .vid {
-    width: 65%;
-    max-width: 100%;
-    max-height: 100%;
-}
-
-.third-section-content .description {
-    width: 35%;
-    padding: 20px;
-    color: #fff;
-}
-
-.third-section-content .description h2 {
-    margin-bottom: 10%;
-    text-align: center;
-    font-family: "Montserrat", sans-serif;
-    font-size: 31.2064px;
-    font-weight: 800;
-    color: rgb(255, 255, 255);
-}
-
-.third-section-content .description p {
-    font-family: "Montserrat", sans-serif;
-    font-size: 12.3px;
-    font-weight: 400;
-    color: rgb(255, 255, 255);
-    width: 90%;
-    margin-left: auto;
-    text-align: left;
-    line-height: 2.0;
+    width: 140px;
 }
 
 @media (max-width: 768px) {
-    .third-section-content .background-image {
-        display: none;
-        /* Hide the background image */
-    }
-
     .header-row-1 {
         flex-direction: column;
         /* Stack the elements vertically */
@@ -481,56 +400,34 @@ h3 {
         margin-bottom: 10px;
         /* Add some space below each logo */
     }
-
-    .video-description {
-        flex-direction: column;
-        /* Stack the video and description vertically */
-        align-items: center;
-        /* Center align the video and description */
-    }
-
-    .third-section-content .vid {
-        width: 65%;
-        height: auto;
-    }
-
-    .third-section-content .description {
-        width: 100%;
-        /* Make the description take up the full width */
-        padding: 10px;
-        /* Reduce the padding */
-    }
-
-    .third-section-content .description p {
-        width: 100%;
-        /* Make the paragraph take up the full width */
-        margin: 0 auto;
-        /* Center the paragraph */
-    }
 }
 
-
-
 /*Fourth Section*/
+.black-background {
+    background-color: black;
+}
+
+.fourth-section-heading {
+    font-family: Montserrat, sans-serif;
+    font-size: 80px;
+    font-weight: 600;
+    color: #dfdada;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
 .fourth-section {
-    background-size: 100% 60%;
-    background-repeat: no-repeat;
-    background-position: center center;
     position: relative;
     width: 100%;
-    /* height: 100vh; */
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 30px;
 }
 
 .front {
     width: 75%;
-    height: 500px;
+    height: 550px;
     margin: auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
     box-shadow: 0px 0px 3px grey;
     position: relative;
     overflow: hidden;
@@ -541,8 +438,6 @@ h3 {
     width: 100%;
     height: 100%;
     transition: 1s;
-
-    /* Add this line */
 }
 
 /* Styles for the arrow buttons */
@@ -881,14 +776,12 @@ h3 {
 
     .sixth-section .center-text {
         display: none;
-        /* Remove top positioning */
     }
 
     .sixth-section .description-text {
         position: relative;
-        /* Change to relative positioning */
         top: auto;
-        /* Remove top positioning */
+
     }
 }
 
@@ -1057,5 +950,20 @@ h3 {
     .seventh-section .column:nth-child(2),
     .seventh-section .column:nth-child(3) {
         display: none;
+    }
+}
+
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
     }
 }

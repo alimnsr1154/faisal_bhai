@@ -14,5 +14,11 @@ const observer1 = new IntersectionObserver((entries) => {
     });
 });
 
+
+const video = document.querySelector('.video');
+const playButton = document.querySelector('#playButton');
+const pauseButton = document.querySelector('#pauseButton');
+
+
 // Start observing the sections
 observer1.observe(firstSection);
