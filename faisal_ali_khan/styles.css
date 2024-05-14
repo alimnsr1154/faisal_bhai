@@ -197,6 +197,7 @@ a {
 }
 
 .second-section-content .left {
+    padding-top: 80px;
     flex: 0 0 35%;
     display: flex;
     justify-content: center;
