@@ -14,23 +14,22 @@
         /* This creates a divider after the header */
     }
 
-    .header::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-image: url('assets/Untitled\ design\ \(3\).png');
-        /* Change this */
-        background-repeat: no-repeat;
-        /* Add this to prevent the image from repeating */
-        animation: slideDown 2s ease-out;
-        background-position: center;
-        opacity: 0.9;
-        /* Adjust as needed */
-        z-index: -1;
-    }
+  .header::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('assets/faisal_pics/cover.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      /* or contain */
+      animation: slideDown 2s ease-out;
+      background-position: center;
+      opacity: 0.9;
+      z-index: -1;
+  }
 
     .avatar {
         width: 150px;
