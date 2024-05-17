@@ -15,7 +15,7 @@ body {
 
 .logo {
     font-family: 'Sublima Extra Bold', sans-serif;
-    font-size: 40px;
+    font-size: 70px;
     font-weight: bold;
     color: #111275;
     margin-right: 20px;
@@ -26,7 +26,7 @@ body {
 }
 
 a {
-    margin-top: 10px;
+    margin-top: 30px;
     /* Adjust the value as needed */
 }
 
@@ -35,7 +35,7 @@ a {
     background-color: #ffffff;
     color: #66717a;
     font-family: 'Alesand Extra Bold', sans-serif;
-    font-size: 13px;
+    font-size: 16px;
     font-weight: bold;
     padding: 10px 5px;
     margin-right: 2px;
@@ -56,13 +56,13 @@ a {
 .first-section-content {
     display: flex;
     margin-left: 5%;
-    height: 500px;
+    height: 100vh;
     flex: 1;
 }
 
 
 .first-section-content .left {
-    flex: 0.45;
+    flex: 0.4;
     display: flex;
     flex-direction: column;
     padding-right: 20px;
@@ -77,7 +77,7 @@ a {
     margin-top: 10%;
     color: #999999;
     font-family: 'Kinetika Regular', sans-serif;
-    font-size: 60px;
+    font-size: 100px;
     font-weight: lighter;
 }
 
@@ -85,7 +85,7 @@ a {
     font-family: 'Helvetica';
     color: #111275;
     font-weight: 800;
-    font-size: 80px;
+    font-size: 120px;
     margin-left: 120px;
     margin-bottom: 5%;
 }
@@ -102,15 +102,15 @@ a {
 }
 
 .paragraph {
-    color: #8c8c97;
+    color: #343435;
     font-family: 'Noyh R Light', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     margin-left: 20px;
     margin-top: 10px;
 }
 
 .first-section-content .right {
-    flex: 0.55;
+    flex: 0.6;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -129,7 +129,7 @@ a {
 .video {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 90%;
 }
 
 .horizontal-bar {
@@ -151,22 +151,6 @@ a {
 }
 
 
-@media (max-width: 768px) {
-    .first-section-content {
-        flex-direction: column;
-    }
-
-    .first-section-content .left,
-    .first-section-content .right {
-        width: 100%;
-        height: 100vh;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-}
 
 /*second section*/
 .second-section-wrapper {
@@ -183,7 +167,7 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.9)), url('assets/mockups/mockup12.jpg');
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.9)), url('assets/mockups/mockup12.jpg');
     background-size: cover;
     background-position: center;
     z-index: -1;
@@ -209,7 +193,7 @@ a {
 }
 
 .second-section-content .right {
-    padding-top: 140px;
+    padding-top: 100px;
     position: relative;
     flex: 0 0 65%;
 }
@@ -218,7 +202,7 @@ a {
     font-family: "Montserrat", sans-serif;
     font-size: 60px;
     font-weight: 800;
-    color: #000000;
+    color: #111275;
     text-align: center;
     margin-bottom: 30px;
 }
@@ -282,7 +266,7 @@ h3 {
 .extra-content {
     display: flex;
     align-items: center;
-    gap: 50px;
+    justify-content: space-between;
 }
 
 .second-section-content .right .extra {
@@ -296,8 +280,8 @@ h3 {
 
 
 .extra-content img {
-    width: 120px;
-    height: 120px;
+    width: 220px;
+    height: auto;
 }
 
 
@@ -387,8 +371,8 @@ h3 {
 }
 
 .third-section-content .logos img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
 }
 
 @media (max-width: 768px) {
@@ -416,14 +400,14 @@ h3 {
 
 /*Fourth Section*/
 .black-background {
-    background-color: black;
+    background-color: rgb(255, 255, 255);
 }
 
 .fourth-section-heading {
     font-family: Montserrat, sans-serif;
     font-size: 80px;
     font-weight: 600;
-    color: #dfdada;
+    color: rgb(18, 18, 117);
     margin-bottom: 50px;
     text-align: center;
 }
@@ -600,7 +584,7 @@ h3 {
     font-size: 12px;
     color: black;
     font-family: "Montserrat", sans-serif;
-    opacity: 0.5;
+
 }
 
 .card .card-body .card-text.name {
@@ -611,9 +595,6 @@ h3 {
     font-family: "Montserrat", sans-serif;
 }
 
-
-/* Existing CSS... */
-/* Existing CSS... */
 
 /* Hide arrow buttons on mobile */
 @media (max-width: 768px) {
@@ -640,10 +621,9 @@ h3 {
     position: relative;
     height: 1000px;
     margin-bottom: 10px;
-    background-color: black;
 }
 
-.black-background {
+.sixth-section .black-background {
     position: relative;
     padding: 50px;
     min-height: 900px;
@@ -652,6 +632,7 @@ h3 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: #000000;
 }
 
 .background {
@@ -732,11 +713,11 @@ h3 {
     color: rgb(118, 118, 118);
 }
 
-.card-text.message {
+.sixth-section .card-text.message {
     font-family: 'Montserrat', sans-serif;
     font-size: 12.0064px;
     font-weight: 400;
-    line-height: 16.809px;
+    line-height: 0.809px;
     color: rgb(76, 76, 76);
 }
 
@@ -761,7 +742,7 @@ h3 {
     text-align: center;
     padding: 20px;
     position: relative;
-    top: 150px;
+    top: 30px;
 }
 
 /* Styles for smaller screens */

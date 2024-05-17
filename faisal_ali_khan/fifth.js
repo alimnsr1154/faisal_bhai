@@ -43,7 +43,7 @@ var cards = [
         type: 'video',
         src: 'assets/testimonails/2.mp4',
         message: "We were launching our APP and needed a high end celebrity included marketing campaigns and Faisal did an amazing work way higher  than our expectation. Later on we had project lambo a crypto and blockchain project in which again he helped us in branding and high quality visuals and video creation. I definitely recommend him!",
-        name: 'Iqbal Ullah2',
+        name: 'Iqbal Ullah',
         designation: '"OUI SELECT LTD" - London,UK'
     },
     {
