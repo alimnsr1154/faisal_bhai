@@ -15,6 +15,20 @@ const observer1 = new IntersectionObserver((entries) => {
 });
 
 
+// Select the buttons
+const youtubeButton = document.getElementById('youtube-button');
+const whatsappButton = document.getElementById('whatsapp-button');
+
+// Add event listener to the YouTube button
+youtubeButton.addEventListener('click', () => {
+    window.open('https://www.youtube.com/watch?v=jFLn4A_ZZU8', '_blank'); // Replace YOUR_VIDEO_ID with the actual video ID or URL
+});
+
+// Add event listener to the WhatsApp button
+whatsappButton.addEventListener('click', () => {
+    window.open('https://wa.me/923008637620', '_blank'); // Replace YOUR_PHONE_NUMBER with the actual phone number including country code
+});
+
 const video = document.querySelector('.video');
 const playButton = document.querySelector('#playButton');
 const pauseButton = document.querySelector('#pauseButton');
