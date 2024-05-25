@@ -1,0 +1,164 @@
+/*Seventh Section*/
+.seventh-section {
+
+    background-color: #242478;
+    justify-content: space-between;
+    padding: 5vh;
+    color: #fff;
+}
+
+.seventh-section .columns {
+    display: flex;
+    padding: 50px;
+}
+
+.column img {
+    width: 10vh;
+    height: auto;
+}
+
+.seventh-section .column:nth-child(1) {
+    width: 20%;
+}
+
+.seventh-section .column:nth-child(2),
+.seventh-section .column:nth-child(3) {
+    width: 15%;
+}
+
+.seventh-section .column:nth-child(4),
+.seventh-section .column:nth-child(5) {
+    width: 25%;
+}
+
+.seventh-section .column {
+    box-sizing: border-box;
+}
+
+.seventh-section h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3vh;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 20.0064px;
+}
+
+.seventh-section ul,
+.seventh-section form {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8vh;
+    font-weight: 400;
+    line-height: 11.008px;
+}
+
+.seventh-section .column ul li {
+    margin: 20px 0;
+}
+
+.seventh-section .column ul li i {
+    margin-right: 10px;
+}
+
+.seventh-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.seventh-section column ul li {
+    background: #fff;
+    color: #000;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.seventh-section ul li,
+.seventh-section form label {
+    margin-bottom: 10px;
+}
+
+.seventh-section .column ul li img {
+    width: 3vh;
+    height: 3vh;
+}
+
+.seventh-section .social-icon {
+    margin-right: 1vh;
+}
+
+.seventh-section .column:nth-child(5) form label {
+    display: block;
+}
+
+.seventh-section .column:nth-child(5) form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+}
+
+.seventh-section form input[type="text"],
+.seventh-section form button {
+    display: block;
+    margin-top: 20px;
+}
+
+.seventh-section .column:nth-child(5) form button {
+    width: 40%;
+    padding: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.7vh;
+    background-color: #242478;
+    font-weight: 700;
+    line-height: 11.2px;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.seventh-section .column:nth-child(5) form button:hover {
+    color: #242478;
+    background-color: #ffffff;
+}
+
+.seventh-section .divider {
+    border: 0;
+    border-top: 1px solid #000;
+    margin: 20px 0;
+}
+
+.seventh-section .footer {
+    text-align: center;
+    font-size: 2vh;
+}
+
+.seventh-section .divider {
+    border: 0;
+    border-top: 1px solid #000;
+    margin: 20px 0;
+}
+
+.seventh-section .footer {
+    text-align: center;
+    font-size: 2vh;
+}
+
+.seventh-section .large-font {
+    font-size: 2vh;
+}
+
+@media (max-width: 600px) {
+    .seventh-section {
+        padding: 0px;
+    }
+
+    .seventh-section .columns {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .seventh-section .column:nth-child(1),
+    .seventh-section .column:nth-child(2),
+    .seventh-section .column:nth-child(3),
+    .seventh-section .column:nth-child(4),
+    .seventh-section .column:nth-child(5) {
+        width: 100%;
+    }
+}

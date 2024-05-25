@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.header {
+    background-color: #ffffff;
+    color: hsl(239, 75%, 26%);
+    padding-left: 5%;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.logo {
+    font-family: 'Sublima Extra Bold', sans-serif;
+    font-size: 9vh;
+    font-weight: bold;
+    color: #111275;
+    margin-right: 3vh;
+}
+
+.header-buttons {
+    display: flex;
+}
+
+a {
+    margin-top: 3.2vh;
+    /* Adjust the value as needed */
+}
+
+.button {
+    border: none;
+    background-color: #ffffff;
+    color: #66717a;
+    font-family: 'Alesand Extra Bold', sans-serif;
+    font-size: 2.1vh;
+    font-weight: bold;
+    padding: 2vh 1vh;
+    margin-right: 0.5vh;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.button:active,
+.button:focus {
+    outline: none;
+}
+
+.button:hover {
+    color: #111275;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 2%;
+    }
+
+    .logo {
+        font-size: 7vh;
+        margin-right: 0;
+        margin-bottom: 2vh;
+    }
+
+    .header-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .button {
+        font-size: 2.5vh;
+        padding: 1.5vh 1vh;
+        margin-bottom: 1vh;
+        width: 100%;
+        text-align: left;
+    }
+
+    a {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 6vh;
+    }
+
+    .button {
+        font-size: 2.2vh;
+        padding: 1.2vh 1vh;
+    }
+}

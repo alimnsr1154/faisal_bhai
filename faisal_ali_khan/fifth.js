@@ -1,7 +1,7 @@
 //Fifth Section
 
 $(document).ready(function () {
-    var carousel = $('#carouselExampleControls'); // Replace with your carousel's selector
+    var carousel = $('#carouselExampleControls');
 
     carousel.slick({
         slidesToShow: 3,
@@ -9,10 +9,26 @@ $(document).ready(function () {
         arrows: false,
         muted: true,
         focusOnSelect: true,
-        centerMode: true, // Enables centered view with partial prev/next slides
-        centerPadding: '0px', // Removes padding
-        autoplay: true, // Enables automatic sliding
-        autoplaySpeed: 5000 // Sets the delay between slides to 5 seconds
+        centerMode: true,
+        centerPadding: '0px',
+        autoplay: true,
+        autoplaySpeed: 5000,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1, // Display one card at a time on devices up to 768px
+                    centerMode: true,
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1, // Display one card at a time on devices up to 480px
+                    centerMode: true,
+                }
+            }
+        ]
     });
 
     $('#prevButton').on('click', function () {
@@ -35,32 +51,31 @@ var cards = [
     {
         type: 'video',
         src: 'assets/testimonails/5.mp4',
-        message: "UNDP  knows the importance of content creation in modern digital world and luckily Faisal helped us a lot in the communication and video content areas for our initiatives and programs. His devotion towards climate change projects and documentaries is really extra ordinary and the way he craft the storytelling and make content engaging is impressive. He did a great job and we are looking forward for more collaborations!",
+        message: "UNDP knows the importance of content creation in modern digital world and luckily Faisal helped us a lot in the communication and video content areas for our initiatives and programs. His devotion towards climate change projects and documentaries is really extraordinary and the way he crafts the storytelling and makes content engaging is impressive. He did a great job and we are looking forward for more collaborations!",
         name: 'Ammara Durrani',
         designation: '"Assistant Resident Representative" - UNDP,Pakistan'
     },
     {
         type: 'video',
         src: 'assets/testimonails/2.mp4',
-        message: "We were launching our APP and needed a high end celebrity included marketing campaigns and Faisal did an amazing work way higher  than our expectation. Later on we had project lambo a crypto and blockchain project in which again he helped us in branding and high quality visuals and video creation. I definitely recommend him!",
+        message: "We were launching our APP and needed a high-end celebrity included marketing campaigns and Faisal did an amazing work way higher than our expectation. Later on, we had project lambo a crypto and blockchain project in which again he helped us in branding and high quality visuals and video creation. I definitely recommend him!",
         name: 'Iqbal Ullah',
         designation: '"OUI SELECT LTD" - London,UK'
     },
     {
         type: 'video',
         src: 'assets/testimonails/1.mp4',
-        message: "We were launching our APP and needed a high end celebrity included marketing campaigns and Faisal did an amazing work way higher  than our expectation. Later on we had project lambo a crypto and blockchain project in which again he helped us in branding and high quality visuals and video creation. I definitely recommend him!",
+        message: "We were launching our APP and needed a high-end celebrity included marketing campaigns and Faisal did an amazing work way higher than our expectation. Later on, we had project lambo a crypto and blockchain project in which again he helped us in branding and high quality visuals and video creation. I definitely recommend him!",
         name: 'Emman Ali',
         designation: '"OUI SELECT LTD" - London,UK'
     },
     {
         type: 'video',
         src: 'assets/testimonails/3.mp4',
-        message: "NGO and International Organizations are always a tricky field for documentaries and agenda based films and I must say Faisal always did a great job working for UNDP,  USIP and now for UN Migration. His story telling ability is well matured and emotional that we do need in such initiatives  and I hope he will keep on serving the humanity through his artistic branding, web development and video creation for documentaries.",
+        message: "NGO and International Organizations are always a tricky field for documentaries and agenda-based films and I must say Faisal always did a great job working for UNDP, USIP and now for UN Migration. His storytelling ability is well matured and emotional that we do need in such initiatives and I hope he will keep on serving the humanity through his artistic branding, web development and video creation for documentaries.",
         name: 'Suzana Paklar',
         designation: '"Senior Program Coordinator" - UN Migration'
     },
-
 ];
 
 var carousel = document.getElementById('carouselExampleControls');
