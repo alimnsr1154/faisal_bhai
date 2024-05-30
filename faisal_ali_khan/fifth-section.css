@@ -21,7 +21,7 @@
     width: 100%;
 }
 
-#prevButton,
+/* #prevButton,
 #nextButton {
     position: absolute;
     top: 50%;
@@ -33,17 +33,15 @@
 
 #prevButton {
     left: 2vh;
-    /* Adjust as needed */
 }
 
 #nextButton {
     right: 2vh;
-    /* Adjust as needed */
-}
+
+} */
 
 #carouselExampleControls {
     width: 100%;
-    padding: 0 50px 0 60px;
     /* Adjust as needed */
 }
 

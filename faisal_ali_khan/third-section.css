@@ -2,7 +2,7 @@
 .third-section-content {
     position: relative;
     height: 50vh;
-    margin-bottom: 13vh;
+    margin-bottom: 5vh;
     margin-top: 10vh;
     background-color: #ffffff;
 }
@@ -34,16 +34,14 @@
     display: flex;
     justify-content: space-between;
     margin-top: 5vh;
-    margin-left: 5vh;
-    margin-right: 200vh;
-    margin-bottom: 5vh;
+
 }
 
 .third-section-content .logos .third_logo1 {
     width: 25vh;
     height: 25vh;
     margin-right: 5vh;
-    margin-left: 5vh;
+ 
 }
 
 .third-section-content .logos .third_logo2 {
@@ -71,8 +69,8 @@
 }
 
 .third-section-content .logos .third_logo6 {
-    width: 45vh;
-    height: 27vh;
+    width: 35vh;
+    height: 29vh;
 
 }
 
@@ -80,7 +78,6 @@
     width: 27vh;
     height: 27vh;
     margin-right: 3vh;
-    margin-left: 5vh;
 }
 
 .third-section-content .logos .third_logo8 {

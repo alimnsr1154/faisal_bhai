@@ -21,8 +21,8 @@
 }
 
 .front {
-    width: 75%;
-    height: 75vh;
+    width: 85%;
+    height: 90vh;
     margin: auto;
     box-shadow: 0px 0px 3px grey;
     position: relative;
@@ -55,11 +55,11 @@
 }
 
 .left-arrow {
-    left: 2vh;
+    left: 0vh;
 }
 
 .right-arrow {
-    right: 2vh;
+    right: 0vh;
 }
 
 .arrow-img {
