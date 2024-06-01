@@ -1,12 +1,12 @@
 /*fifth Section*/
 .fifth-section {
-    margin-bottom: 5vh;
+    margin-bottom: 1vh;
     position: relative;
 }
 
 .card-video-top {
     width: 100%;
-    max-width: 500px;
+    max-width: 62vh;
     height: auto;
     object-fit: contain;
 }
@@ -52,7 +52,7 @@
 
 .slick-slide {
     transition: all 0.3s ease;
-    margin: 0 20px;
+    margin: 0 3vh;
     /* Adjust as needed */
 }
 
@@ -60,7 +60,7 @@
     position: relative;
     transform: scale(1.1) translateY(-20px);
     z-index: 1;
-    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 3vh 0px rgba(0, 0, 0, 0.75);
 }
 
 .active-card {
