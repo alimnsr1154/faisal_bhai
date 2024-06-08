@@ -2,7 +2,7 @@
 .third-section-content {
     position: relative;
     height: 50vh;
-    margin-bottom: 5vh;
+    margin-bottom: 10vh;
     margin-top: 10vh;
     background-color: #ffffff;
 }
@@ -109,94 +109,88 @@
     height: 27vh;
 }
 
-
 /* Responsive Styles */
 @media (max-width: 768px) {
-
-    #prevButton,
-    #nextButton {
-        left: 1vh;
-        right: 1vh;
-        top: 45%;
+    .third-section-content {
+        height: auto;
+        margin-bottom: 5vh;
+        margin-top: 5vh;
     }
 
-    #carouselExampleControls {
-        padding: 0 30px;
+    .third-section-content h1 {
+        font-size: 8vh;
     }
 
-    .slick-slide {
-        margin: 0 10px;
+    .third-section-content .logos {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
-    .slick-center {
-        transform: scale(1.05) translateY(-10px);
+    .third-section-content .logos>div {
+        margin-bottom: 5vh;
     }
 
-    .card .card-body .card-text.message,
-    .card .card-body .card-text.designation,
-    .card .card-body .card-text.name {
-        font-size: 1.8vh;
-    }
-}
-
-@media (max-width: 480px) {
-
-    #prevButton,
-    #nextButton {
-        display: none;
-    }
-
-    #carouselExampleControls {
-        padding: 0 10px;
-    }
-
-    .card .card-body .card-text.message,
-    .card .card-body .card-text.designation,
-    .card .card-body .card-text.name {
-        font-size: 1.5vh;
-    }
-
-    .slick-slide {
-        margin: 0 5px;
-    }
-
-    .slick-center {
-        transform: scale(1.03) translateY(-5px);
-    }
-
-    .fifth-section {
-        margin-bottom: 10vh;
-    }
-}
-
-/* 
-@media (max-width: 768px) {
-    .third-section-content .logos img {
-        width: 20vh;
-        height: 20vh;
-        margin-right: 2vh;
-    }
-
+    .third-section-content .logos .third_logo1,
+    .third-section-content .logos .third_logo2,
+    .third-section-content .logos .third_logo3,
+    .third-section-content .logos .third_logo4,
+    .third-section-content .logos .third_logo5,
+    .third-section-content .logos .third_logo6,
+    .third-section-content .logos .third_logo7,
+    .third-section-content .logos .third_logo8,
+    .third-section-content .logos .third_logo9,
+    .third-section-content .logos .third_logo10,
+    .third-section-content .logos .third_logo11,
     .third-section-content .logos .third_logo12 {
-        width: 21vh;
-        height: 22vh;
+        width: 20vh;
+        height: auto;
+        margin-right: 2vh;
     }
 }
 
 @media (max-width: 480px) {
     .third-section-content {
-        margin-bottom: 5vh;
+        height: auto;
+        margin-bottom: 3vh;
+        margin-top: 3vh;
+    }
+
+    .third-section-content h1 {
+        font-size: 6vh;
+    }
+
+    .third-section-content .text-content {
+        padding-top: 20px;
     }
 
     .third-section-content .logos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 2vh;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
-    .third-section-content .logos img {
-        width: 50vh;
-        height: auto;
+    .third-section-content .logos>div {
+        margin-bottom: 3vh;
     }
-} */
+
+    .third-section-content .logos .third_logo1,
+    .third-section-content .logos .third_logo2,
+    .third-section-content .logos .third_logo5,
+    .third-section-content .logos .third_logo6,
+    .third-section-content .logos .third_logo7,
+    .third-section-content .logos .third_logo8,
+    .third-section-content .logos .third_logo9,
+    .third-section-content .logos .third_logo10,
+    .third-section-content .logos .third_logo11,
+    .third-section-content .logos .third_logo12 {
+        width: 18vh;
+        height: auto;
+        margin-right: 1vh;
+    }
+
+    .third-section-content .logos .third_logo3,
+    .third-section-content .logos .third_logo4{
+            width: 18vh;
+            height: 15vh;
+            margin-right: 1vh;
+    }
+}

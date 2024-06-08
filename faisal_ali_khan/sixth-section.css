@@ -1,4 +1,4 @@
-/*Sixth section*/
+/* Sixth section */
 .sixth-section .card-body {
     text-align: center;
 }
@@ -54,7 +54,7 @@
     left: calc(50% - 15px);
     width: 4vh;
     height: 5vh;
-    background: white;
+    background: rgb(255, 255, 255);
     transform: rotate(45deg);
 }
 
@@ -110,7 +110,7 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 15vh;
     font-weight: 800;
-    line-height: 15vh;                                                                                                              
+    line-height: 15vh;
     color: rgb(255, 255, 255);
     text-align: center;
     position: absolute;
@@ -133,65 +133,80 @@
 /* Media Queries */
 @media (max-width: 780px) {
     .sixth-section {
-        margin-bottom: 15vh;
+        height: auto;
+        margin-bottom: 10vh;
     }
 
     .sixth-section .black-background {
         padding: 5vh;
     }
 
-    .sixth-section .social-cards {
-        width: 90%;
-        bottom: 50vh;
-        flex-direction: column;
-    }
-
-    .sixth-section .social-cards .card {
-        width: 80%;
-        height: auto;
-        margin-bottom: 5vh;
-    }
-
     .sixth-section .center-text {
         font-size: 10vh;
+        line-height: 10vh;
         bottom: 10%;
     }
 
     .sixth-section .description-text {
         font-size: 2vh;
+        padding: 3vh;
         top: 5vh;
+    }
+
+    .social-cards {
+        width: calc(100% - 20px);
+        bottom: auto;
+        top: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: relative;
+    }
+
+    .social-cards .card {
+        width: 40%;
+        height: 30vh;
+        margin-bottom: 5vh;
     }
 }
 
 @media (max-width: 480px) {
     .sixth-section {
-        margin-bottom: 10vh;
+        height: auto;
+        margin-bottom: 5vh;
     }
 
     .sixth-section .black-background {
         padding: 3vh;
+        background-color: transparent;
     }
 
-    .sixth-section .social-cards {
-        width: 100%;
-        bottom: 30vh;
-        flex-direction: column;
-    }
-
-    .sixth-section .social-cards .card {
-        width: 90%;
-        height: auto;
-        margin-bottom: 4vh;
+    .background {
+        display: none;
     }
 
     .sixth-section .center-text {
-        /* font-size: 8vh; */
         display: none;
-        /* bottom: 8%; */
     }
 
     .sixth-section .description-text {
-        font-size: 1.8vh;
-        top: 20vh;
+        display: none;
+    }
+
+    .social-cards {
+        width: 100%;
+        bottom: auto;
+        top: 5vh;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-cards .card {
+        width: 90%;
+        height: auto;
+        margin-bottom: 3vh;
+    }
+
+    .social-cards .card::after {
+        display: none;
     }
 }
