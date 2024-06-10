@@ -1,4 +1,4 @@
-/*third section*/
+/* Third section */
 .third-section-content {
     position: relative;
     height: 50vh;
@@ -32,16 +32,29 @@
 
 .third-section-content .logos {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
     margin-top: 5vh;
+    overflow: hidden;
+    white-space: nowrap;
+}
 
+.third-section-content .logos-inner {
+    display: flex;
+    animation: slideLogos 30s linear infinite;
+}
+
+.third-section-content .logos img {
+    flex-shrink: 0;
+    width: auto;
+    height: 25vh;
+    margin-right: 3vh;
 }
 
 .third-section-content .logos .third_logo1 {
     width: 25vh;
     height: 25vh;
     margin-right: 5vh;
- 
+
 }
 
 .third-section-content .logos .third_logo2 {
@@ -108,6 +121,18 @@
     width: 31vh;
     height: 27vh;
 }
+
+/* Define the animation */
+@keyframes slideLogos {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
 
 /* Responsive Styles */
 @media (max-width: 768px) {
@@ -188,9 +213,9 @@
     }
 
     .third-section-content .logos .third_logo3,
-    .third-section-content .logos .third_logo4{
-            width: 18vh;
-            height: 15vh;
-            margin-right: 1vh;
+    .third-section-content .logos .third_logo4 {
+        width: 18vh;
+        height: 15vh;
+        margin-right: 1vh;
     }
 }
