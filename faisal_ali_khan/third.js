@@ -12,7 +12,7 @@ logosContainer.appendChild(logosInner);
 const observer3 = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
-            entry.target.style.animation = 'slideLogos 50s linear infinite';
+            entry.target.style.animation = 'slideLogos 100s linear infinite';
         }
     });
 });
