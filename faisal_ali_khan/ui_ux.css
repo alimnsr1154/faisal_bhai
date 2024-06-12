@@ -1,0 +1,121 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #1e1e2f;
+    color: white;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-sidebar,
+.right-sidebar {
+    width: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vertical-text {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    font-size: 14px;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.circle {
+    width: 450px;
+    height: 450px;
+    background: linear-gradient(45deg, #6e0dd0, #9a2eff);
+    border-radius: 50%;
+    margin-left: 50px;
+    margin-top: 50px;
+    position: absolute;
+}
+
+.title {
+    font-size: 70px;
+    font-weight: 700;
+    text-align: center;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    z-index: 1;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.intro-text {
+    text-align: right;
+}
+
+.intro-text p {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.intro-text p.name {
+    margin-bottom: 10px !important;
+    margin-right: 50px !important;
+    font-size: 1.5em;
+}
+
+.intro-text h2 {
+    margin: 0;
+    font-size: 3em;
+}
+
+.profile-pic {
+    width: 300px;
+    margin-right: 100px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.right-sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills p {
+    margin: 5px 0;
+    font-size: 1em;
+    text-align: right;
+}
+
+.skills {
+    position: absolute;
+    right: 20px;
+    top: 70%;
+    transform: translateY(-50%);
+}
