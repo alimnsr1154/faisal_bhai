@@ -14,7 +14,6 @@ html {
     justify-content: center;
 }
 
-.left-sidebar,
 .right-sidebar {
     width: 5%;
     display: flex;
@@ -22,11 +21,27 @@ html {
     justify-content: center;
 }
 
+.left-sidebar {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 .vertical-text {
     writing-mode: vertical-rl;
     text-orientation: mixed;
     transform: rotate(180deg);
-    font-size: 14px;
+    font-size: 2.2vh;
+    margin-right: 1vh;
+
+}
+
+.vertical-line {
+    height: 8vh;
+    width: 0.3vh;
+    background-color: purple;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
 }
 
 .main-content {
@@ -48,22 +63,25 @@ html {
 }
 
 .circle {
-    width: 450px;
-    height: 450px;
+    width: 80vh;
+    height: 80vh;
     background: linear-gradient(45deg, #6e0dd0, #9a2eff);
     border-radius: 50%;
-    margin-left: 50px;
-    margin-top: 50px;
+    margin-left: 8vh;
+    margin-top: 8vh;
     position: absolute;
 }
 
 .title {
-    font-size: 70px;
+    font-size: 15vh;
     font-weight: 700;
     text-align: center;
-    margin-left: 30px;
-    margin-bottom: 20px;
+    margin-left: 5vh;
+    margin-bottom: 1vh;
     z-index: 1;
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(251, 251, 251);
+
 }
 
 .intro {
@@ -83,21 +101,21 @@ html {
 }
 
 .intro-text p.name {
-    margin-bottom: 10px !important;
-    margin-right: 50px !important;
-    font-size: 1.5em;
+    margin-bottom: 1vh !important;
+    margin-right: 8vh !important;
+    font-size: 4.4vh;
 }
 
 .intro-text h2 {
     margin: 0;
-    font-size: 3em;
+    font-size: 7vh;
 }
 
 .profile-pic {
-    width: 300px;
-    margin-right: 100px;
+    width: 62vh;
+    margin-right: 15vh;
     height: auto;
-    border-radius: 10px;
+    border-radius: 1vh;
 }
 
 .right-sidebar {
@@ -108,14 +126,80 @@ html {
 }
 
 .skills p {
-    margin: 5px 0;
-    font-size: 1em;
+    margin: 1vh 0;
+    font-size: 2.5vh;
     text-align: right;
 }
 
 .skills {
     position: absolute;
-    right: 20px;
+    right: 2vh;
     top: 70%;
+    margin-top: 2vh;
     transform: translateY(-50%);
+}
+
+/* Existing CSS */
+
+/* ... */
+
+/* Media query for devices with width 768px and below */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left-sidebar,
+    .right-sidebar {
+        display: none;
+    }
+
+    .main-content {
+        height: 100vh;
+    }
+
+    .circle {
+        width: 60vh;
+        height: 60vh;
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .title {
+        font-size: 10vh;
+        margin-left: 0;
+    }
+
+    .intro-text p.name {
+        margin-right: 0;
+    }
+
+    .profile-pic {
+        width: 50vh;
+        margin-right: 0;
+    }
+}
+
+/* Media query for devices with width 480px and below */
+@media (max-width: 480px) {
+    .circle {
+        width: 40vh;
+        height: 40vh;
+    }
+
+    .title {
+        font-size: 8vh;
+    }
+
+    .intro-text p.name {
+        font-size: 3vh;
+    }
+
+    .intro-text h2 {
+        font-size: 5vh;
+    }
+
+    .profile-pic {
+        width: 30vh;
+    }
 }
