@@ -42,7 +42,6 @@
 
 #carouselExampleControls {
     width: 100%;
-    /* Adjust as needed */
 }
 
 #prevButton:focus,
@@ -53,7 +52,6 @@
 .slick-slide {
     transition: all 0.3s ease;
     margin: 0 3vh;
-    /* Adjust as needed */
 }
 
 .slick-center {
@@ -124,47 +122,3 @@
         transform: none;
     }
 }
-
-/* 
-@media screen and (max-width: 600px) {
-    .fifth-section {
-        margin-bottom: 5vh;
-    }
-
-    .card-video-top {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .carousel-container {
-        width: 100%;
-    }
-
-    #carouselExampleControls {
-        padding: 0 20px;
-    }
-
-    #prevButton,
-    #nextButton {
-        top: auto;
-        bottom: -10vh;
-    }
-
-    #prevButton {
-        left: 10%;
-    }
-
-    #nextButton {
-        right: 10%;
-    }
-
-    .slick-slide {
-        margin: 0 10px;
-    }
-
-    .card .card-body .card-text.message,
-    .card .card-body .card-text.designation,
-    .card .card-body .card-text.name {
-        font-size: 3vh;
-    }
-} */

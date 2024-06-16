@@ -1,3 +1,5 @@
+/* Existing CSS for the first section */
+
 body,
 html {
     margin: 0;
@@ -139,11 +141,52 @@ html {
     transform: translateY(-50%);
 }
 
-/* Existing CSS */
+/* Existing CSS for the second section */
 
-/* ... */
+.second-section {
+    padding-top: 50px;
+    width: 100%;
+    margin-top: 40px;
+    color: #000000;
+    background: #ffffff;
+    padding-left: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+}
 
-/* Media query for devices with width 768px and below */
+.item {
+    display: flex;
+    align-items: center;
+    flex: 1 1 calc(50% - 20px);
+    box-sizing: border-box;
+}
+
+.item-number {
+    font-size: 3em;
+    font-weight: bold;
+    color: #a174ff;
+    margin-right: 20px;
+}
+
+.item-content {
+    max-width: 600px;
+}
+
+.item-content h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #000000;
+}
+
+.item-content p {
+    margin: 5px 0 0 0;
+    margin-right: 200px;
+    color: #555555;
+}
+
+/* Media queries */
+
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
@@ -178,9 +221,30 @@ html {
         width: 50vh;
         margin-right: 0;
     }
+
+    .second-section {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .item {
+        flex: 1 1 100%;
+        /* One item per row */
+    }
+
+    .item-number {
+        font-size: 2em;
+    }
+
+    .item-content h2 {
+        font-size: 1.2em;
+    }
+
+    .item-content p {
+        font-size: 1em;
+    }
 }
 
-/* Media query for devices with width 480px and below */
 @media (max-width: 480px) {
     .circle {
         width: 40vh;
@@ -201,5 +265,17 @@ html {
 
     .profile-pic {
         width: 30vh;
+    }
+
+    .item-number {
+        font-size: 1.5em;
+    }
+
+    .item-content h2 {
+        font-size: 1em;
+    }
+
+    .item-content p {
+        font-size: 0.9em;
     }
 }
