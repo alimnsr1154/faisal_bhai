@@ -1,24 +1,14 @@
 /*fifth Section*/
 .fifth-section {
     margin-bottom: 1vh;
+    margin-left: 4%;
+    margin-right: 4%;
     position: relative;
 }
 
 .card-video-top {
     width: 100%;
-    max-width: 62vh;
-    height: auto;
-    object-fit: contain;
-}
-
-.carousel-container {
-    position: relative;
-    width: 80%;
-    margin: auto;
-}
-
-#carouselExampleControls {
-    width: 100%;
+    max-width: 56vh;
 }
 
 /* #prevButton,
