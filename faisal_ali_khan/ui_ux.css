@@ -14,6 +14,7 @@ html {
     height: 100vh;
     align-items: center;
     justify-content: center;
+    margin-bottom: 5vh;
 }
 
 .right-sidebar {
@@ -141,52 +142,30 @@ html {
     transform: translateY(-50%);
 }
 
-/* Existing CSS for the second section */
+.buttons-section button {
+    font-family: "Montserrat", sans-serif;
+    background-color: white;
+    border: none;
+    color: #111275;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2.2vh;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s;
 
-.second-section {
-    padding-top: 50px;
-    width: 100%;
-    margin-top: 40px;
-    color: #000000;
-    background: #ffffff;
-    padding-left: 100px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-wrap: wrap;
 }
 
-.item {
-    display: flex;
-    align-items: center;
-    flex: 1 1 calc(50% - 20px);
-    box-sizing: border-box;
-}
-
-.item-number {
-    font-size: 3em;
-    font-weight: bold;
-    color: #a174ff;
-    margin-right: 20px;
-}
-
-.item-content {
-    max-width: 600px;
-}
-
-.item-content h2 {
-    margin: 0;
-    font-size: 1.5em;
-    color: #000000;
-}
-
-.item-content p {
-    margin: 5px 0 0 0;
-    margin-right: 200px;
-    color: #555555;
+.buttons-section button:hover {
+    background-color: #111275;
+    color: #fff9f9;
+    text-decoration: underline;
 }
 
 /* Media queries */
-
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
