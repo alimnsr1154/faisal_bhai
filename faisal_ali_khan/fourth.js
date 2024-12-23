@@ -1,4 +1,4 @@
-var images = ['assets/team-pics/services pages/slide1.png', 'assets/team-pics/services pages/slide2.png', 'assets/team-pics/services pages/slide3.png', 'assets/team-pics/services pages/slide4.png'];
+var images = ['assets/team-pics/services pages/slide1.jpg', 'assets/team-pics/services pages/slide2.jpg', 'assets/team-pics/services pages/slide3.jpg', 'assets/team-pics/services pages/slide4.jpg'];
 const frontDiv = document.querySelector('.front');
 
 // Remove any existing images
