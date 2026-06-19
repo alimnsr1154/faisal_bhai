@@ -1,17 +1,113 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title> FAISAL ALI KHAN - Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio — Faisal Ali Khan</title>
+    <meta name="description" content="Selected work by Faisal Ali Khan — video production, UI/UX, film and educational content.">
     <link rel="icon" href="assets/F_logo.png">
-    <link rel="stylesheet" href="portfolio.css">
+    <link rel="preload" href="fonts/anton-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/archivo-700.woff2" as="font" type="font/woff2" crossorigin>
+    <script>document.documentElement.classList.add('js')</script>
+    <link rel="stylesheet" href="styles.min.css">
 </head>
 
 <body>
-    <div class="header">
-    </div>
-    <div id="content-container"></div>
-    <script src="portfolio.js"></script>
+    <header class="site-header">
+        <div class="container site-header__inner">
+            <a href="index.html" class="brand" aria-label="Faisal Khan home"><span class="brand__a">F</span><span class="brand__b">K</span></a>
+            <nav class="site-nav" id="primary-nav" aria-label="Primary">
+                <ul>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="ui_ux.html">Web Design &amp; UI/UX</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+                <a class="btn btn--pill site-nav__cta" href="mailto:Faisalalikhancd@gmail.com">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 6 10 7L22 6"/></svg>
+                    Subscribe
+                </a>
+            </nav>
+            <a class="btn btn--pill header-cta" href="mailto:Faisalalikhancd@gmail.com">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 6 10 7L22 6"/></svg>
+                Subscribe
+            </a>
+            <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="container page-hero">
+            <p class="eyebrow reveal">Selected work</p>
+            <h1 class="page-hero__title reveal">Portfolio</h1>
+            <p class="page-hero__sub reveal" data-delay="1">
+                A cross-section of video production, design and storytelling work across brands, NGOs and
+                international organizations.
+            </p>
+        </section>
+
+        <section class="container section work">
+            <article class="work__item reveal">
+                <div class="work__text">
+                    <span class="work__index">01</span>
+                    <h2 class="work__title">Video Production &amp; SMM Ads</h2>
+                    <p class="work__desc">High-converting social campaigns and brand films for B2B and B2C
+                        audiences.</p>
+                </div>
+                <div class="yt-lite" data-id="Hcg2zSnQpCU" aria-label="Play video">
+                    <span class="yt-play"></span>
+                </div>
+            </article>
+
+            <article class="work__item reveal">
+                <div class="work__text">
+                    <span class="work__index">02</span>
+                    <h2 class="work__title">UI/UX &amp; Web Design</h2>
+                    <p class="work__desc">Product design and websites that pair clean interfaces with measurable
+                        results.</p>
+                </div>
+                <div class="yt-lite" data-id="1G90C-JNiSA" aria-label="Play video">
+                    <span class="yt-play"></span>
+                </div>
+            </article>
+
+            <article class="work__item reveal">
+                <div class="work__text">
+                    <span class="work__index">03</span>
+                    <h2 class="work__title">Film &amp; Documentaries</h2>
+                    <p class="work__desc">Story-driven documentaries for UNDP, USIP and UN Migration.</p>
+                </div>
+                <div class="yt-lite" data-id="HUNFrmBz9BY" aria-label="Play video">
+                    <span class="yt-play"></span>
+                </div>
+            </article>
+
+            <article class="work__item reveal">
+                <div class="work__text">
+                    <span class="work__index">04</span>
+                    <h2 class="work__title">Podcast &amp; Educational</h2>
+                    <p class="work__desc">Long-form, educational content that builds authority and community.</p>
+                </div>
+                <div class="yt-lite" data-id="8cOWGT4Cn2Y" aria-label="Play video">
+                    <span class="yt-play"></span>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer__bottom">
+                <span>© 2024 Faisal LLC. All Rights Reserved.</span>
+                <span><a href="index.html">Home</a> · <a href="ui_ux.html">UI/UX</a></span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="bundle.min.js" defer></script>
 </body>
 
 </html>

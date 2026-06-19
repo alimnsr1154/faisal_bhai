@@ -1,0 +1,209 @@
+/* ============================================================
+   Design tokens + base — Serhant-inspired monochrome system
+   ============================================================ */
+:root {
+  /* Palette */
+  --bg: #ffffff;
+  --ink: #0a0a0a;
+  --muted: #6b6b6b;
+  --line: #e6e6e6;
+  --inverse-bg: #0a0a0a;
+  --inverse-ink: #ffffff;
+  --inverse-muted: #9a9a9a;
+
+  /* Brand accent — Serhant-style navy blue */
+  --accent: #1b2a6b;
+  --accent-ink: #ffffff;
+  --logo-mute: #9a9aa3;
+
+  /* Type families */
+  --font-display: "Anton", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-sans: "Archivo", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  /* Fluid type scale */
+  --fs-hero: clamp(3.25rem, 11vw, 11rem);
+  --fs-display: clamp(2.5rem, 7vw, 6rem);
+  --fs-h2: clamp(1.9rem, 4.5vw, 3.5rem);
+  --fs-h3: clamp(1.25rem, 2.2vw, 1.75rem);
+  --fs-body: clamp(1rem, 1.15vw, 1.125rem);
+  --fs-small: 0.875rem;
+  --fs-eyebrow: 0.8rem;
+
+  /* Spacing / layout — near full-bleed like the Serhant site */
+  --container: 1840px;
+  --gutter: clamp(1.25rem, 5vw, 5rem);
+  --section-y: clamp(2.5rem, 6vw, 5.5rem);
+  --radius: 2px;
+
+  /* Motion */
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  /* clip (not hidden) contains horizontal overflow — including fixed
+     descendants — without creating a scroll container, so the sticky
+     header keeps working. */
+  overflow-x: clip;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: var(--fs-body);
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+img,
+video {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* ---------- Typography primitives ---------- */
+.display,
+.section-title {
+  font-family: var(--font-display);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.005em;
+  line-height: 0.95;
+  margin: 0;
+}
+
+.eyebrow {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  font-size: var(--fs-eyebrow);
+  color: var(--accent);
+  margin: 0 0 1.25rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+/* small leading rule before centered section eyebrows */
+.section-head .eyebrow::before,
+.section-head .eyebrow::after {
+  content: "";
+  width: 28px;
+  height: 1.5px;
+  background: var(--accent);
+}
+
+.lede {
+  font-size: clamp(1.05rem, 1.5vw, 1.35rem);
+  line-height: 1.6;
+  color: var(--ink);
+  max-width: 60ch;
+}
+
+/* ---------- Layout primitives ---------- */
+.container {
+  width: 100%;
+  max-width: var(--container);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.section {
+  padding-block: var(--section-y);
+}
+
+.section--full {
+  width: 100%;
+}
+
+.section-head {
+  text-align: center;
+  margin-bottom: clamp(2rem, 5vw, 4rem);
+}
+
+.section-head .section-title {
+  font-size: var(--fs-display);
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 1rem 2rem;
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 0.82rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  border: 1.5px solid var(--accent);
+  background: var(--accent);
+  color: var(--accent-ink);
+  cursor: pointer;
+  border-radius: var(--radius);
+  transition: background 0.3s var(--ease), color 0.3s var(--ease);
+}
+
+.btn:hover {
+  background: transparent;
+  color: var(--accent);
+}
+
+.btn--ghost {
+  background: transparent;
+  color: var(--accent);
+}
+
+.btn--ghost:hover {
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+
+/* Pill CTA (header) */
+.btn--pill {
+  border-radius: 100px;
+  padding: 0.7rem 1.4rem;
+  font-size: 0.72rem;
+}
+
+/* Inverse (on dark) variants */
+.on-dark .btn,
+.btn--on-dark {
+  border-color: var(--inverse-ink);
+  background: var(--inverse-ink);
+  color: var(--ink);
+}
+.on-dark .btn:hover,
+.btn--on-dark:hover {
+  background: transparent;
+  color: var(--inverse-ink);
+}

@@ -1,0 +1,52 @@
+.clients {
+  border-block: 1px solid var(--line);
+  overflow: hidden;
+}
+
+.marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 45s linear infinite;
+}
+
+.marquee:hover {
+  animation-play-state: paused;
+}
+
+.marquee__group {
+  display: flex;
+  align-items: center;
+  gap: clamp(2.5rem, 6vw, 6rem);
+  padding-right: clamp(2.5rem, 6vw, 6rem);
+}
+
+.marquee img {
+  height: clamp(36px, 5vw, 58px);
+  width: auto;
+  object-fit: contain;
+  filter: grayscale(0.15);
+  opacity: 0.9;
+  transition: filter 0.3s var(--ease), opacity 0.3s var(--ease);
+}
+
+.marquee img:hover {
+  filter: grayscale(0);
+  opacity: 1;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee {
+    animation: none;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

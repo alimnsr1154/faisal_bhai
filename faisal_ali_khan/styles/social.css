@@ -1,0 +1,103 @@
+.social {
+  position: relative;
+  background: var(--inverse-bg);
+  color: var(--inverse-ink);
+  overflow: hidden;
+}
+
+.social__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.social__bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.25;
+}
+
+.social__inner {
+  position: relative;
+  z-index: 1;
+}
+
+.social__head {
+  max-width: 60ch;
+  margin-bottom: clamp(2.5rem, 6vw, 4rem);
+}
+
+.social__title {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  font-size: var(--fs-display);
+  line-height: 0.95;
+  margin: 0 0 1.25rem;
+}
+
+.social__desc {
+  color: var(--inverse-muted);
+  max-width: 56ch;
+}
+
+.social-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.25rem;
+}
+
+/* Brand accent per platform */
+.social-card--linkedin  { --card-clr: #0A66C2; }
+.social-card--youtube   { --card-clr: #FF0000; }
+.social-card--instagram { --card-clr: #E1306C; }
+.social-card--facebook  { --card-clr: #1877F2; }
+.social-card--x         { --card-clr: #e7e7e7; }
+
+.social-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 1.75rem 1.5rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--card-clr, rgba(255, 255, 255, 0.12));
+  border-top-width: 3px;
+  border-radius: var(--radius);
+  transition: transform 0.3s var(--ease), background 0.3s var(--ease);
+}
+
+.social-card:hover {
+  transform: translateY(-8px);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.social-card__icon svg {
+  width: 28px;
+  height: 28px;
+  color: var(--card-clr, var(--inverse-ink));
+}
+
+.social-card__user {
+  font-size: var(--fs-small);
+  color: var(--inverse-muted);
+  margin-top: 0.5rem;
+}
+
+.social-card__count {
+  font-family: var(--font-display);
+  font-size: 2.25rem;
+  line-height: 1;
+}
+
+.social-card__label {
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--inverse-muted);
+}
+
+.social-card__cta {
+  margin-top: 0.75rem;
+  font-size: var(--fs-small);
+  font-weight: 700;
+}

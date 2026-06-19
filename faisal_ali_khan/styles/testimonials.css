@@ -1,0 +1,79 @@
+.testimonials-wrap {
+  position: relative;
+}
+
+/* Reuse services-btn styles — arrows sit just outside the track edges */
+.testimonials-wrap .services-prev {
+  left: -1.5rem;
+}
+
+.testimonials-wrap .services-next {
+  right: -1.5rem;
+}
+
+.testimonials-track {
+  display: flex;
+  gap: clamp(1rem, 2.5vw, 2rem);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  padding: 0.5rem var(--gutter) 1.5rem;
+  margin-inline: calc(-1 * var(--gutter));
+}
+
+.testimonials-track::-webkit-scrollbar {
+  display: none;
+}
+
+.t-card {
+  flex: 0 0 min(88%, 380px);
+  scroll-snap-align: center;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.t-card__media {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  background: #111;
+}
+
+.t-card__body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.t-card__quote {
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: var(--ink);
+  margin: 0 0 0.75rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.t-card__name {
+  font-weight: 700;
+  margin: 0;
+}
+
+.t-card__role {
+  font-size: var(--fs-small);
+  color: var(--muted);
+  margin: 0;
+}
+
+@media (min-width: 900px) {
+  .t-card {
+    flex-basis: 360px;
+  }
+}

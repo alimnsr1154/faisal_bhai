@@ -1,0 +1,72 @@
+/* Full-bleed image "moments" — large edge-to-edge photo with overlaid copy. */
+.feature {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: clamp(440px, 62vh, 660px);
+  overflow: hidden;
+  text-align: center;
+  color: #fff;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Readability overlay — subtle navy tint + dark gradient */
+.feature::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(180deg, rgba(8, 10, 24, 0.42), rgba(8, 10, 24, 0.58));
+}
+
+.feature__inner {
+  position: relative;
+  z-index: 2;
+  max-width: 60ch;
+  padding-inline: var(--gutter);
+}
+
+.feature__eyebrow {
+  font-weight: 700;
+  font-size: var(--fs-eyebrow);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.75);
+  margin: 0 0 1.25rem;
+}
+
+.feature__title {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  font-size: var(--fs-display);
+  line-height: 0.98;
+  margin: 0 0 1.75rem;
+}
+
+/* Arrow link — reused on dark features and on light sections */
+.arrow-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.arrow-link svg {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.25s var(--ease);
+}
+
+.arrow-link:hover svg {
+  transform: translateX(6px);
+}
+
+.feature .arrow-link {
+  color: #fff;
+}

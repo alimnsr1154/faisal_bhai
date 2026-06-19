@@ -1,0 +1,21 @@
+{
+  "name": "faisal-ali-khan-site",
+  "version": "1.0.0",
+  "description": "Faisal Ali Khan portfolio — static site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "optimize:images": "node scripts/optimize-images.mjs",
+    "optimize:video": "bash scripts/optimize-video.sh",
+    "optimize": "npm run optimize:images && npm run optimize:video",
+    "build:css": "lightningcss --minify --bundle styles/main.css -o styles.min.css",
+    "build:js": "esbuild scripts/main.js --bundle --minify --outfile=bundle.min.js",
+    "build": "npm run build:css && npm run build:js",
+    "dev": "npx --yes serve -l 5173 ."
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.0",
+    "lightningcss-cli": "^1.27.0",
+    "sharp": "^0.33.5"
+  }
+}
