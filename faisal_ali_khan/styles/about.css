@@ -1,3 +1,7 @@
+.about {
+  padding-top: 0;
+}
+
 .about__grid {
   display: grid;
   grid-template-columns: 1.1fr 1fr;
@@ -72,21 +76,18 @@
 
 .about__logos {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
-  gap: clamp(1.5rem, 4vw, 3rem);
+  justify-content: space-between;
+  gap: clamp(1rem, 2vw, 2rem);
 }
 
 .about__logos img {
-  height: 34px;
+  height: clamp(44px, 5vw, 64px);
   width: auto;
+  flex: 1 1 0;
+  max-width: 120px;
   object-fit: contain;
-  filter: grayscale(1);
-  opacity: 0.7;
-  transition: filter 0.3s var(--ease), opacity 0.3s var(--ease);
-}
-
-.about__logos img:hover {
   filter: grayscale(0);
   opacity: 1;
 }
