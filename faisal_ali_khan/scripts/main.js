@@ -5,6 +5,7 @@ import { initServices } from "./services.js";
 import { initTestimonials } from "./testimonials.js";
 import { initSocial } from "./social.js";
 import { initYouTube } from "./youtube.js";
+import { initUiuxProjects } from "./uiux.js";
 
 function boot() {
   initHeader();
@@ -13,6 +14,7 @@ function boot() {
   initTestimonials();
   initSocial();
   initYouTube();
+  initUiuxProjects();
   initLazyVideo();
   // Reveal runs last so dynamically-added .reveal elements are observed too.
   initReveal();
